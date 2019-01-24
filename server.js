@@ -3,6 +3,7 @@
 require('dotenv').config()
 const express = require('express')
 
+
 // app 
 const app = express() 
 
@@ -10,10 +11,13 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 app.use(express.static('./public'))
+// Set the view engine
+app.set('view engine', 'ejs')
 
-app.get('/main', (req, res) => {
-  res.send('hello')
-})
+app.get('/home', home)
 
+function home(req, res) {
+ res.render('index')
+}
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
 
