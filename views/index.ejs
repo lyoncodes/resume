@@ -1,12 +1,27 @@
 <%- include('../views/head.ejs') %>
     <body>
+     <nav class="nav-links">
+      <ul>
+       <li><a href="/">Home</a></li>
+      </ul>
+     </nav>
+     <header>
+      <div class="header-content">
+       <h1> Michael Lyon </h1>
+       <h3> Technical Copy Writer </h3>
+       <form action="/search" method="post">
+         <input type="text" name="search" placeholder="Search Michael's Work" required>
+         <button type="submit">Search</button>
+       </form>
+      </div>
+     </header>
         <main>
             <section class="intro">
              Michael Lyon's Resume Page begins here
             </section>
 
             <h2>Examples & Work Snippets</h2>
-            <section class="how-to-search">
+            <section class="headline">
                 
                 <figure>
                     <h3>Example 1</h3>
@@ -47,6 +62,7 @@
                         <li>Miles Davis</li>
                     </ul>
                 </figure>
+                
             </section>
         </main>
     </body>
