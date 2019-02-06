@@ -17,16 +17,19 @@ app.set('view engine', 'ejs')
 app.get('/home', home)
 app.post('/resume', resume)
 app.post('/CVV', cvv)
+app.post('/nba', nba)
 
 function home(req, res) {
  res.render('index')
 }
-
 function resume(req, res) {
  res.render('resume')
 }
 function cvv(req, res) {
  res.render('CVV')
+}
+function nba(req, res) {
+ res.render('nba')
 }
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
 
