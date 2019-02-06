@@ -33,8 +33,7 @@ header input[type="text"]:focus, header select:focus, header button:hover{
  outline: none;
 
 }
-/* .menu-buttons{
-  display: flex;
-  flex-direction: column;
-  align-items: center
-} */
+.menu-buttons{
+  margin-top: 35px;
+  display: flex
+}
