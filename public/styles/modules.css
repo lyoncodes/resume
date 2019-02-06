@@ -35,5 +35,14 @@ header input[type="text"]:focus, header select:focus, header button:hover{
 }
 .menu-buttons{
   margin-top: 35px;
-  display: flex
+  display: flex;
+  justify-content: center
+}
+.nav-links{
+  text-align: center;
+  line-height: 2.75em;
+}
+.nav-links a{
+  color: pink;
+  text-decoration: none
 }
