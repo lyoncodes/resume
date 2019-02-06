@@ -15,9 +15,14 @@ app.use(express.static('./public'))
 app.set('view engine', 'ejs')
 
 app.get('/home', home)
+app.post('/search', search)
 
 function home(req, res) {
  res.render('index')
+}
+
+function search(req, res) {
+ res.render('resume')
 }
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
 
