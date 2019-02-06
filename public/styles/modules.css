@@ -17,6 +17,7 @@ header button{
    background-color: #c1ddf1;
    text-align: center;
    text-transform: uppercase;
+   font-family: Lato;
    position: relative;
    overflow: hidden;
    margin: 10px;
@@ -39,10 +40,12 @@ header input[type="text"]:focus, header select:focus, header button:hover{
   justify-content: center
 }
 .nav-links{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   line-height: 2.75em;
 }
 .nav-links a{
   color: pink;
-  text-decoration: none
+  text-decoration: none;
+  padding: 20px
 }
