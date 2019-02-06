@@ -14,11 +14,16 @@ header input{
  transition: 0.3s;
 }
 header button{
-   background-color: #5ca8df;
-   width: 80px;
+   background-color: #c1ddf1;
+   text-align: center;
+   text-transform: uppercase;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   padding: 20px;
+   width: 180px;
    color: white;
-   border-top-right-radius: 5px;
-   border-bottom-right-radius: 5px;
+   border-radius: 1px;
 }
 header input[type="text"]:focus, header select:focus, header button:hover{
  background-color: #030303;
@@ -26,4 +31,18 @@ header input[type="text"]:focus, header select:focus, header button:hover{
  transition: 0.3s;
  border: none;
  outline: none;
+
+}
+.menu-buttons{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center
+}
+.nav-links{
+  text-align: center;
+  line-height: 2.75em;
+}
+.nav-links a{
+  color: pink;
+  text-decoration: none
 }
