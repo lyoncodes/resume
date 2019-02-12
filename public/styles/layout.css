@@ -20,7 +20,16 @@ header{
     padding: 15px;
    }
 /* Main + Section styling */
-main{
+main {
     width: 100%;
     margin: 0 auto;
+}
+.resume-body {
+    margin: 20px;
+}
+.l-Section-content {
+    margin-top: 30px;
+}
+.Section {
+    border-top: 1px solid lightblue;
 }
