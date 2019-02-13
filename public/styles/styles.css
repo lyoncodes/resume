@@ -41,8 +41,14 @@ h3 {
     margin-bottom: 75px;
     color: #5ca8df;
 }
-h5{
-    font-size: 14pt;
+h4 {
+    font-size: 18px;
+}
+ .section-title {
+     margin-bottom: 8px;
+ }
+h5 {
+    font-size: 14px;
 }
 .Title {
     font-size: 42px;
@@ -53,8 +59,15 @@ h5{
     display: inline-block;
 }
 .Title-sub {
-    font-size: 0.34em;
+    font-size: 0.64em;
     letter-spacing: 0.16em;
     font-weight: 400;
     display: block
+}
+.sub-list {
+    font-size: .90em;
+    list-style-type: disc;
+}
+.sub-list li{
+    margin-top: 4px;
 }
