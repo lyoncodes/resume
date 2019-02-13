@@ -27,16 +27,16 @@ header button{
    border-radius: 1px;
 }
 header input[type="text"]:focus, header select:focus, header button:hover{
- background-color: #030303;
- color:#5ca8df;
+ background-color: black;
+  color: #5ca8df;
  transition: 0.3s;
  border: none;
  outline: none;
 
 }
 .Tag {
-  color: black;
-  text-shadow: 2px 2px 0 pink;
+  color: #5ca8df;
+  text-shadow: .5px .5px 0 pink;
   font-weight: 700;
   line-height: 1;
   position: relative;
