@@ -28,7 +28,7 @@ header button{
 }
 header input[type="text"]:focus, header select:focus, header button:hover{
  background-color: black;
-  color: #5ca8df;
+ color: #5ca8df;
  transition: 0.3s;
  border: none;
  outline: none;
@@ -58,4 +58,7 @@ header input[type="text"]:focus, header select:focus, header button:hover{
   color: pink;
   text-decoration: none;
   padding: 20px
+}
+.nav-links a:hover{
+  color: #5ca8df;
 }
