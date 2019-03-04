@@ -33,3 +33,7 @@ function nba(req, res) {
 }
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
 
+// Error handling
+function handleError (res) {
+  res.status(404).send('Resource Unavailable!')
+}
