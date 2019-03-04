@@ -33,3 +33,7 @@ main {
 .Section {
     border-top: 1px solid lightblue;
 }
+/* CVV styling */
+.cvv {
+    margin: auto 50px 25px;
+}
