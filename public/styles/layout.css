@@ -24,15 +24,28 @@ main {
     width: 100%;
     margin: 0 auto;
 }
-.resume-body {
-    margin: 20px;
-}
+
 .l-Section-content {
     margin-top: 30px;
 }
+
 .Section {
     border-top: 1px solid lightblue;
 }
+
+@media screen and (min-width: 720px) {
+    .resume-body {
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .resume-body {
+        margin: 50px;
+    }
+}
+
+
+
 /* CVV styling */
 .cvv {
     margin: 25px 50px 25px;
