@@ -59,12 +59,14 @@ h5 {
     margin-bottom: 0;
     display: inline-block;
 }
-
-/* Mobile Styling*/
-@media screen and (max-width: 526) {
-#resTitle {
-    text-align: center;
-}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+    #resTitle {
+        text-align: center
+    }
 }
 
 .Title-sub {
