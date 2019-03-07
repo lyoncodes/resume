@@ -33,18 +33,18 @@ main {
     border-top: 1px solid lightblue;
 }
 
+.resume-body {
+    margin: 50px;
+}
+
 @media screen and (min-width: 720px) {
     .resume-body {
-        margin: 20px;
+        margin: 20px
     }
 }
-@media screen and (max-width: 720px) {
-    .resume-body {
-        margin: 50px;
-    }
+@media screen and (min-width: 590px) {
+
 }
-
-
 
 /* CVV styling */
 .cvv {
