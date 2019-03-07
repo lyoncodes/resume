@@ -50,6 +50,7 @@ h4 {
 h5 {
     font-size: 14px;
 }
+
 .Title {
     font-size: 42px;
     font-weight: 900;
@@ -58,6 +59,14 @@ h5 {
     margin-bottom: 0;
     display: inline-block;
 }
+
+/* Mobile Styling*/
+@media screen and (max-width: 526) {
+#resTitle {
+    text-align: center;
+}
+}
+
 .Title-sub {
     font-size: 0.64em;
     letter-spacing: 0.16em;
