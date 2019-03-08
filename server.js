@@ -1,4 +1,8 @@
 'use strict'
+// define console logs
+const success = "This seems to be working"
+console.log(success)
+
 // import dependencies
 require('dotenv').config()
 const express = require('express')
@@ -19,13 +23,14 @@ client.on('error', err => console.error(err))
 // Set the view engine
 app.set('view engine', 'ejs')
 
+// Routes
 app.get('/home', home)
-app.get('/nba', nba)
 app.post('/resume', resume)
 app.post('/CVV', cvv)
 app.post('/nba', nba)
-// app.post('/save', saveGuest)
+app.post('/save', readForm)
 
+// Rendering Functions
 function home(req, res) {
  res.render('index')
 }
@@ -39,9 +44,25 @@ function nba(req, res) {
  res.render('nba')
 }
 
-// function saveGuest(req, res) {
+// Read & Save Functions
+function onFormSubmit () {
+  var formData = readForm()
+}
 
-// }
+function readForm() {
+  console.log('evoked')
+  var formData = {}
+  formData["firstName"] = document.getElementsByName("firstName").value
+  formData["email"] = document.getElementsByName("email").value
+  formData["moveIn"] = document.getElementsByName("moveIn").value
+  formData["floorPlan"] = document.getElementsByName("floorPlan").value
+  return formData
+}
+
+// Object Constructor
+function Guest() {
+
+}
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
 
 // Error handling

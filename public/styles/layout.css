@@ -19,6 +19,7 @@ header{
     border: 5px solid black;
     padding: 15px;
    }
+
 /* Main + Section styling */
 main {
     width: 100%;
@@ -36,6 +37,8 @@ main {
 .resume-body {
     margin: 50px;
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 720px) {
     .resume-body {
