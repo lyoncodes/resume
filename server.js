@@ -47,6 +47,7 @@ function nba(req, res) {
 // Read & Save Functions
 function onFormSubmit () {
   var formData = readForm()
+  insertNewGuest(formData)
 }
 
 function readForm() {
@@ -60,7 +61,17 @@ function readForm() {
 }
 
 // Object Constructor
-function Guest() {
+function insertNewGuest (data) {
+  var table = document.getElementById("guestList").getElementsByTagName('tbody')[0]
+  var newRow = table.insertRow(table.length)
+  cell1 = newRow.insertCell(0)
+  cell1.innerHTML = data.firstName
+  cell2 = newRow.insertCell(1)
+  cell2.innerHTML = data.email
+  cell3 = newRow.insertCell(2)
+  cell3.innerHTML = data.moveIn
+  cell4 = newRow.insertCell(3)
+  cell4.innerHTML = data.floorPlan
 
 }
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
