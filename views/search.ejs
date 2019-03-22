@@ -4,11 +4,13 @@
   </p>
 </div>
 
+<header>
+
  <table>
   <tr>
    <td>
     <div>
-     <form action="/save" method="POST" autocomplete="off">
+     <form onsubmit="alert('submit!'); return false"; action="/save" method="POST" autocomplete="off">
      <input type="text" name="firstName" placeholder="Name" required>
     </div>
     <div>
@@ -23,7 +25,7 @@
    </form>
    </td>
    <td>
-    <table class="guestList">
+    <table id="guestList">
      <thead>
       <tr>
        <th>Name</th>
@@ -37,3 +39,4 @@
   </tr>
    <button type="submit">Save Guest</button>
  </table>
+</header>
