@@ -82,3 +82,15 @@ and (orientation : portrait) {
 .sub-list li{
     margin-top: 4px;
 }
+
+.input-text-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-left: 7.5em;
+    width: 75%;
+    height: 10em;
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: pink;
+}

@@ -25,10 +25,9 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/home', home)
-app.post('/resume', resume)
-app.post('/CVV', cvv)
-app.post('/nba', nba)
-app.post('/save', readForm)
+app.get('/resume', resume)
+app.get('/CVV', cvv)
+app.get('/nba', nba)
 
 // Rendering Functions
 function home(req, res) {
@@ -45,35 +44,7 @@ function nba(req, res) {
 }
 
 // Read & Save Functions
-function onFormSubmit () {
-  var formData = readForm()
-  insertNewGuest(formData)
-}
 
-function readForm() {
-  console.log('evoked')
-  var formData = {}
-  formData["firstName"] = document.getElementsByName("firstName").value
-  formData["email"] = document.getElementsByName("email").value
-  formData["moveIn"] = document.getElementsByName("moveIn").value
-  formData["floorPlan"] = document.getElementsByName("floorPlan").value
-  return formData
-}
-
-// Object Constructor
-function insertNewGuest (data) {
-  var table = document.getElementById("guestList").getElementsByTagName('tbody')[0]
-  var newRow = table.insertRow(table.length)
-  cell1 = newRow.insertCell(0)
-  cell1.innerHTML = data.firstName
-  cell2 = newRow.insertCell(1)
-  cell2.innerHTML = data.email
-  cell3 = newRow.insertCell(2)
-  cell3.innerHTML = data.moveIn
-  cell4 = newRow.insertCell(3)
-  cell4.innerHTML = data.floorPlan
-
-}
 app.listen(PORT, () => console.log(`listening on port ${3000}`))
 
 // Error handling
