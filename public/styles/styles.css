@@ -94,3 +94,48 @@ and (orientation : portrait) {
     border-style: solid;
     border-color: pink;
 }
+
+div.contact {
+  background-color: black;
+  margin-top: 5vw;
+  padding-top: 20px;
+  padding-bottom: 40vw;
+  color: white;
+  font-family: Lato, Helvetica, sans-serif;
+
+}
+
+.info {
+    float: right;
+    margin-left: 15px;
+    color: white;
+}
+
+input.form-input {
+    border: none;
+    border-bottom: 4.5px solid white;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    outline: none;
+    font-size: .9em;
+    font-family: Lato, Helvetica, sans-serif;   
+}
+
+p.msg-label {
+    margin-right: 23px;
+}
+
+textarea.form-text-area {
+    border: none;
+    border: 4.5px solid white;
+    margin-right: 6px;
+    background-color: transparent;
+    font-size: .9em;
+    height: 80px;
+    width: 250px;
+    color: white;
+    font-family: Lato, Helvetica, sans-serif;
+
+}
