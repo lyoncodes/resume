@@ -24,14 +24,14 @@ client.on('error', err => console.error(err))
 app.set('view engine', 'ejs')
 
 // Routes
-app.get('/home', home)
+app.get('/', home)
 app.get('/resume', resume)
 app.get('/CVV', cvv)
 app.get('/nba', nba)
 
 // Rendering Functions
 function home(req, res) {
- res.render('index')
+ res.render('../views/index.ejs')
 }
 function resume(req, res) {
  res.render('resume')

@@ -40,12 +40,18 @@ main {
 
 /* Media Queries */
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     .resume-body {
-        margin: 20px
+        margin: 30px
     }
 }
-@media screen and (min-width: 590px) {
+@media screen and (max-width: 630px) {
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                line-height: 2em;
+            }
 
 }
 
