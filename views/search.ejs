@@ -1,42 +1,9 @@
+<%- include('../views/nav.ejs') %>
+
 <div class="resume-body">
- <h1 class = "Title">Guest Book</h1>
-  <p> Guest Book was created to assist real estate professionals with managinging walk-in appointments. Using postgres db and simple form actions, this tool just keeps track of what's entered in the fields and organizes the data into a relational SQL database. Nothing here is server-side, but this is how I became familiar with CRUD. Check out other projects to see RESTful elaborations. 
+
+ <h1 class = "Title">Coming Soon</h1>
+  <p> I will have live websites soon!
   </p>
 </div>
 
-<header>
-
- <table>
-  <tr>
-   <td>
-    <div>
-     <form onsubmit="alert('submit!'); return false"; action="/save" method="POST" autocomplete="off">
-     <input type="text" name="firstName" placeholder="Name" required>
-    </div>
-    <div>
-      <input type="email" name="email" placeholder="Email" required>
-     </div>
-     <div>
-       <input type="text" name="moveIn" placeholder="Move-In Date" required>
-     </div>
-     <div>
-       <input type="text" name="floorPlan" placeholder="Preferred Floor Plan" required>
-     </div>
-   </form>
-   </td>
-   <td>
-    <table id="guestList">
-     <thead>
-      <tr>
-       <th>Name</th>
-       <th>Email</th>
-       <th>Move-In Date</th>
-       <th>Floor Plan</th>
-      </tr>
-     </thead>
-    </table>
-   </td>
-  </tr>
-   <button type="submit">Save Guest</button>
- </table>
-</header>
