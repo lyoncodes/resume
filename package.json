@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/lyoncodes/resume/issues"
   },
-  "homepage": "https://github.com/lyoncodes/resume#readme"
+  "homepage": "https://github.com/lyoncodes/resume#readme",
+  "dependencies": {
+    "ejs": "^2.6.1"
+  }
 }
