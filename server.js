@@ -25,6 +25,7 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/', home)
+app.get('/home', home)
 app.get('/resume', resume)
 app.get('/CVV', cvv)
 app.get('/nba', nba)
