@@ -101,22 +101,27 @@ and (orientation : portrait) {
 }
 /* CONTACT ME */
 div.contact {
-  margin-top: 5vw;
-  margin: 50px;
-  padding-top: 20px;
-  padding-bottom: 40vw;
-  color: black;
-  font-family: Lato, Helvetica, sans-serif;
-
+    margin-top: 5vw;
+    margin: 50px;
+    padding-top: 20px;
+    color: black;
+    font-family: Lato, Helvetica, sans-serif;
+    
 }
 
 .info {
-    float: right;
-    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    margin: 50px auto;
     color: black;
+    font-size: 20px;
 }
 
-.info button {
+.contact-info {
+}
+
+#formAl button {
     background-color: #c1ddf1;
     text-align: center;
     text-transform: uppercase;
@@ -129,7 +134,7 @@ div.contact {
     color: white;
     border-radius: 1px;    
 }
-    .info button:hover {
+    #formAl button:hover {
         background-color: black;
         color: #5ca8df;
         transition: 0.3s;
@@ -160,8 +165,7 @@ textarea.form-text-area {
     background-color: transparent;
     font-size: .9em;
     height: 80px;
-    width: 205px;
+    width: 275px;
     color: black;
     font-family: Lato, Helvetica, sans-serif;
-
 }
