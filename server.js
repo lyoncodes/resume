@@ -1,7 +1,5 @@
 'use strict'
 // define console logs
-const success = "This seems to be working"
-console.log(success)
 
 // import dependencies
 require('dotenv').config()
