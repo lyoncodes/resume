@@ -66,13 +66,15 @@ h5 {
 }
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-    #resTitle {
-        text-align: center
+and (max-device-width : 812px) {
+    #main-title {
+        font-size: 62px;
+    }
+    #main-subtitle {
+        font-size: 18px;
     }
 }
+
 
 .Title-sub {
     font-size: 0.64em;
