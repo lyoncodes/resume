@@ -73,6 +73,10 @@ and (max-device-width : 812px) {
     #main-subtitle {
         font-size: 18px;
     }
+    .l-Section-content ul{
+        margin: 10px;
+        padding-left: 12px;
+    }
 }
 
 
