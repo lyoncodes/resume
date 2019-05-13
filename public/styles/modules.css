@@ -48,10 +48,11 @@ header input[type="text"]:focus, header select:focus, header button:hover{
   margin-top: 35px;
   display: flex;
   justify-content: center
+
 }
 @media screen and (max-width: 589px) {
   .menu-buttons {
-  flex-direction: column
+  flex-direction: column;
   }
 }
 .nav-links{
