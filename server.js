@@ -24,7 +24,6 @@ app.set('view engine', 'ejs')
 // Routes
 app.get('/', home)
 app.get('/home', home)
-app.get('/mom', mom)
 app.get('/resume', resume)
 app.get('/CVV', cvv)
 app.get('/nba', nba)
@@ -32,9 +31,6 @@ app.get('/nba', nba)
 // Rendering Functions
 function home(req, res) {
  res.render('../views/index.ejs')
-}
-function mom(req, res) {
-  res.render('mom')
 }
 function resume(req, res) {
  res.render('resume')
