@@ -10,6 +10,10 @@ body {
  margin: 0;
 }
 
+.wrapper{
+
+}
+
 main {
  padding: 20px;
 }
@@ -38,7 +42,6 @@ h3 {
     font-size: 16pt;
     font-weight: bold;
     margin-top: 0px;
-    margin-bottom: 75px;
     color: #5ca8df;
 }
     .contact-title {
@@ -50,8 +53,9 @@ h4 {
     font-size: 18px;
 }
  .section-title {
-     margin-bottom: 8px;
- }
+     margin-left: 1em;
+}
+
 h5 {
     font-size: 14px;
 }
@@ -64,14 +68,18 @@ h5 {
     margin-bottom: 0;
     display: inline-block;
 }
+
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px) {
     #main-title {
-        font-size: 62px;
+        font-size: 3em;
     }
     #main-subtitle {
         font-size: 18px;
+    }
+    .l-Section-content p{
+        margin-left: 1em;
     }
     .l-Section-content ul{
         margin: 10px;
@@ -87,7 +95,8 @@ and (max-device-width : 812px) {
     font-size: 0.64em;
     letter-spacing: 0.16em;
     font-weight: 400;
-    display: block
+    display: block;
+    margin-left: 3em;
 }
 .sub-list {
     font-size: .90em;
@@ -108,6 +117,8 @@ and (max-device-width : 812px) {
     border-style: solid;
     border-color: pink;
 }
+
+
 /* CONTACT ME */
 div.contact {
     margin-top: 5vw;
@@ -125,9 +136,6 @@ div.contact {
     margin: 50px auto;
     color: black;
     font-size: 20px;
-}
-
-.contact-info {
 }
 
 #formAl button {
