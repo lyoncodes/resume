@@ -45,10 +45,12 @@ h1{
     margin-bottom: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 h2{
     font-size: 24pt;
     margin-top: 15px;
 }
+
 h3 {
     font-size: 16pt;
     font-weight: bold;
@@ -66,7 +68,6 @@ h4 {
 
 .section-title {
     margin-left: 1em;
-    margin-top: 16px;
     text-align: center;
 }
 
@@ -83,6 +84,10 @@ h5 {
     display: inline-block;
 }
 
+p {
+    font-size: 21px;
+}
+
 .l-Section-content {
     font-family: 'Playfair Display', serif;
 }
@@ -96,12 +101,18 @@ and (max-device-width : 812px) {
     #main-subtitle {
         font-size: 18px;
     }
+    .Section ul{
+        width: 100%;
+    }
+    .Section li {
+        line-height: 2em;
+    }
     .l-Section-content p{
         margin-left: 1em;
     }
     .l-Section-content ul{
-        margin: 10px;
-        padding-left: 12px;
+        margin-left: 10px;
+        margin-bottom: 0px;
     }
     .cvv{
         margin: 25px 20px 25px;
