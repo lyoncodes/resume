@@ -5,18 +5,18 @@
 * {
  box-sizing: border-box;
 }
+
 body {
  font-family: Lato, Helvetica, sans-serif;
  margin: 0;
 }
 
-.wrapper{
-
-}
+.wrapper{}
 
 main {
  padding: 20px;
 }
+
 .intro {
  margin-top: 25%;
  text-align: center;
@@ -27,12 +27,23 @@ figure {
  margin: 15px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
 h1{
     font-size: 84pt;
     color: pink;
     text-shadow: 3px 3px #5ca8df;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h2{
     font-size: 24pt;
@@ -52,8 +63,11 @@ h3 {
 h4 {
     font-size: 18px;
 }
- .section-title {
-     margin-left: 1em;
+
+.section-title {
+    margin-left: 1em;
+    margin-top: 16px;
+    text-align: center;
 }
 
 h5 {
@@ -67,6 +81,10 @@ h5 {
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
+}
+
+.l-Section-content {
+    font-family: 'Playfair Display', serif;
 }
 
 @media only screen 

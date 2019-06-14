@@ -59,11 +59,12 @@ header input[type="text"]:focus, header select:focus, header button:hover{
   display: flex;
   justify-content: center;
   line-height: 2.75em;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .nav-links a{
   color: pink;
   text-decoration: none;
-  padding: 20px
+  padding: 20px;
 }
 .nav-links a:hover{
   color: #5ca8df;
