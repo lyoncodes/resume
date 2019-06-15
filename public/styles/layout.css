@@ -30,8 +30,10 @@ img {
 }
 
 .Section {
-    background: #91cfe727;
     overflow: hidden;
+}
+#Skills{
+    background: rgb(156, 179, 243);
 }
 
 .resume-body {
