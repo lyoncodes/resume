@@ -69,3 +69,7 @@ header input[type="text"]:focus, header select:focus, header button:hover{
 .nav-links a:hover{
   color: #5ca8df;
 }
+
+.l-Section-content a{
+  margin: auto;
+}
