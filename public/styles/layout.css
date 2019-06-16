@@ -32,9 +32,6 @@ img {
 .Section {
     overflow: hidden;
 }
-#Skills{
-    background: rgb(156, 179, 243);
-}
 
 .resume-body {
     margin: 50px;
@@ -51,12 +48,15 @@ img {
     }
 }
 @media screen and (max-width: 630px) {
-            .info {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                line-height: 2em;
-            }
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 2em;
+    }
+    .contact-info p {
+        margin: 0;
+    }
 
 }
 

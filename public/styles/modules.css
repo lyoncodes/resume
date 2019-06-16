@@ -3,7 +3,7 @@ input, textarea, button, select{
   font-family: 'Josefin Sans', cursive;
   height: 50px;
   border: 0;
-  margin-left: -3px;
+  text-align: center;
 }
 header input{
  padding: 10px;
