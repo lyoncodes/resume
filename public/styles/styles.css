@@ -150,7 +150,7 @@ and (max-device-width : 812px) {
 }
 
 #Skills{
-    background: rgb(156, 179, 243);
+    background: #7bc8ff;
 }
 #Resume{
     text-align: center;
@@ -189,9 +189,16 @@ textarea.form-text-area {
     border: 2px solid lightblue;
     background-color: transparent;
     font-size: .9em;
-    color: black;
+    color: #b9c1ca;
     padding: 12.5px;
 }
 #formAl{
     margin-bottom: 25px;
+}
+#form{
+    background: #4e80a3;
+    margin-top: 2em;
+}
+#form input, #form textarea{
+    background: white;
 }
