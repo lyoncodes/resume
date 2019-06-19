@@ -1,5 +1,5 @@
 /* Form */
-input, textarea, button, select{
+input, button, select{
   font-family: 'Josefin Sans', cursive;
   height: 50px;
   border: 0;
@@ -32,6 +32,10 @@ header input[type="text"]:focus, header select:focus, header button:hover{
  transition: 0.3s;
  border: none;
  outline: none;
+}
+
+input[type="text"]:focus{
+  border-bottom: 1px solid #10e3eb;
 }
 
 .Tag {
