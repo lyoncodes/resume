@@ -1,4 +1,3 @@
-/* Form */
 input, button, select{
   font-family: 'Josefin Sans', cursive;
   height: 50px;
@@ -14,17 +13,16 @@ header input{
  transition: 0.3s;
 }
 header button{
-   background-color: #c1ddf1;
-   text-align: center;
-   text-transform: uppercase;
-   font-family: Lato;
-   position: relative;
-   overflow: hidden;
-   margin: 10px;
-   padding: 20px;
-   width: 180px;
-   color: white;
-   border-radius: 1px;
+  background-color: #c1ddf1;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  width: 180px;
+  color: white;
+  border-radius: 1px;
 }
 header input[type="text"]:focus, header select:focus, header button:hover{
  background-color: black;
@@ -38,6 +36,12 @@ input[type="text"]:focus{
   border-bottom: 1px solid #10e3eb;
 }
 
+#header-img-title{
+  margin-top: -80px;
+  height: 125px;
+  width: 300px;
+}
+/* Emboldened Text Tag */
 .Tag {
   font-weight: 700;
   line-height: 1;
@@ -47,32 +51,16 @@ input[type="text"]:focus{
   padding-right: 1px;
   font-family: 'Josefin Sans', sans-serif;
 }
-.menu-buttons{
-  border: 2px solid lightblue;
-  border-radius: 2px;
-  background: none;
-  color: black;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: auto;
-  margin-top: 12px;
-}
 
-.nav-links{
-  display: flex;
-  justify-content: center;
-  line-height: 2.75em;
-  font-family: 'Josefin Sans', sans-serif;
-}
+/* Nav Link Colors & Effects */
 .nav-links a{
   color: pink;
   text-decoration: none;
   padding: 20px;
 }
-.nav-links a:hover{
-  color: #5ca8df;
-}
+  .nav-links a:hover{
+    color: #5ca8df;
+  }
 
 .l-Section-content a{
   margin: auto;

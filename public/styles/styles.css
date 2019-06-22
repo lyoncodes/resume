@@ -7,14 +7,7 @@
 }
 
 body {
- font-family: Lato, Helvetica, sans-serif;
  margin: 0;
-}
-
-.wrapper{}
-
-main {
- padding: 20px;
 }
 
 .intro {
@@ -40,14 +33,12 @@ h6 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
 h1{
-    font-size: 84pt;
+    font-size: 3em;
     color: pink;
     text-shadow: 3px 3px #5ca8df;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 h2{
@@ -56,20 +47,17 @@ h2{
 }
 
 h3 {
-    font-size: 16pt;
     font-weight: bold;
     margin-top: 0px;
     color: #5ca8df;
+    font-size: 18px;
 }
 
 h4 {
     font-size: 21px;
-}
-
-.section-title {
     text-align: center;
-
 }
+
 
 h5 {
     font-size: 14px;
@@ -87,59 +75,39 @@ h5 {
 p {
     font-size: 18px;
 }
-
+span{
+    font-family: 'Josefin Sans', sans-serif;
+}
 label{
     font-family: 'Josefin Sans', cursive;
 }
 
 .l-Section-content {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oswald', serif;
 }
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) {
-    #main-title {
-        font-size: 3em;
+    /* Section content default button styling */
+    .l-Section-content button{
+        border: 2px solid lightblue;
+        border-radius: 2px;
+        background: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        margin-top: 12px;
     }
-    #main-subtitle {
-        font-size: 18px;
+    /* section content input styling*/
+    .l-Section-content input{
+        height: 2em;
+        width: 50%;
+        border-bottom: 2px solid lightblue;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        font-size: .9em;
+        text-align: left;
     }
-    .Section ul{
-        width: 100%;
-    }
-    .Section li {
-        font-size: 14px;
-        line-height: 2em;
-        padding-bottom: 12px;
-    }
-    .l-Section-content p{
-        margin-left: 1em;
-    }
-    .l-Section-content ul{
-        margin-left: 20px;
-        margin-bottom: 0px;
-    }
-    .cvv{
-        margin: 25px 20px 25px;
-    }
-}
-
-
-.Title-sub {
-    font-size: 0.64em;
-    letter-spacing: 0.16em;
-    font-weight: 400;
-    display: block;
-    margin-left: 3em;
-}
-.sub-list {
-    font-size: .90em;
-    list-style-type: disc;
-}
-.sub-list li{
-    margin-top: 4px;
-}
 
 .input-text-area {
     display: flex;
@@ -152,38 +120,18 @@ and (max-device-width : 812px) {
     border-style: solid;
     border-color: pink;
 }
-
-#Skills{
+/* Skills and Qualifications Section Styling */
+#skills{
     background: #7bc8ffb2;
-}
-#Resume{
-    text-align: center;
+    margin-top: 2em;
 }
 
-/* CONTACT ME */
-.info {
+/* CONTACT FORM */
+.l-Section-content #contact-form {
     display: flex;
     justify-content: space-around;
     margin: auto;
     color: black;
-}
-.contact-info{
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-input.form-input {
-    height: 2em;
-    width: 50%;
-    border-bottom: 2px solid lightblue;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    font-size: .9em;
-    text-align: left;
-}
-
-p.msg-label {
-    margin-right: 23px;
 }
 
 textarea.form-text-area {
@@ -207,13 +155,27 @@ textarea.form-text-area:focus {
     box-shadow: none;
 }
 
-#formAl{
-    margin-bottom: 25px;
-}
 #form{
     background: #4e80a3c4;
-    margin-top: 2em;
 }
-.form .field{
+
+#contact-form-fields{
     margin-left: -45px;
+}
+
+/* FOOTER */
+footer{
+    height: 100%;
+    background: black;
+    padding: 10px;
+}
+footer p{
+    color: #5ca8df;
+    margin: 0 auto;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #5ca8df;
+    font-size: 12px;
 }
