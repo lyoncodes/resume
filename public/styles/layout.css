@@ -1,66 +1,54 @@
-header{
-   display: flex;
-   align-content: center;
-   justify-content: center;
-   color: white;
-   width: 100%;
-}
-.header-content{
-    text-align: center;
-}
-.overview {
+/* Nav Link Layout */
+.nav-links{
     display: flex;
-    flex-flow: row;
+    font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
-    border: 5px solid black;
-    padding: 15px;
-   }
-
-/* Main + Section styling */
-main {
-    width: 100%;
-    margin: 0 auto;
+    line-height: 2.75em;
 }
-
-
-img {
+/* Main Title & Subtitle Layout */
+header{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.header-img{
     display: block;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
 }
-
-.Section {
+/* Opening Paragraph Layout */
+#intro-paragraph{
+    margin: 30px;
+}
+/* Section Content Layout */
+section{
     overflow: hidden;
 }
+ /* section ul and li */
+ section ul{
+  margin-left: 20px;
+  margin-bottom: 27.9px;
+  width: 100%;
+ }
+  section li{
+    font-size: 14px;
+    line-height: 2em;
+    padding-bottom: 12px;
+  }
 
-.resume-body {
-    margin: 50px;
-}
-.resume-body img {
-    max-height: 350px;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 720px) {
-    .resume-body {
-        margin: 30px
-    }
-}
-@media screen and (max-width: 630px) {
-    .info {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        line-height: 2em;
-    }
-    .contact-info p {
-        margin: 0;
-    }
-
+.l-Section-content p{
+    margin-left: 1em;
 }
 
-/* CVV styling */
-.cvv {
-    margin: 25px 50px 25px;
+/*Contact Form Layout/Styling */
+#contact-form{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2em;
 }
