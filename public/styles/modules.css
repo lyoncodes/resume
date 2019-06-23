@@ -37,9 +37,10 @@ input[type="text"]:focus{
 }
 
 #header-img-title{
-  margin-top: -80px;
-  height: 125px;
-  width: 300px;
+  margin-top: -70px;
+  margin-bottom: -25px;
+  height: 8em;
+  width: 82%;
 }
 /* Emboldened Text Tag */
 .Tag {
@@ -63,5 +64,19 @@ input[type="text"]:focus{
   }
 
 .l-Section-content a{
-  margin: auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+  color: black;
+}
+  .l-Section-content a:hover{
+    color: #5ca8df;
+  }
+
+#social-media{
+  margin-top: 1em;
+  margin-left: 6.6em;
 }
