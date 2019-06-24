@@ -217,7 +217,7 @@ textarea.form-text-area:focus {
 }
 
 /*DESKTOP*/
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1025px) {
     h1{
         font-size: 7em;
         color: pink;

@@ -45,10 +45,8 @@ section{
  .l-Section-content img{
     display: flex;
     justify-content: center;
-    width: 25%;
-    max-width: 25%;
-    margin-left: 18%;
-    max-height: 94px;
+    width: 45%;
+    margin-left: 27%;
  }
 
  .l-Section-content p{

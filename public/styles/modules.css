@@ -81,15 +81,15 @@ input[type="text"]:focus{
   /* Last Gif on Mobile Menu --FIX--*/
     #social-media{
       margin-top: 1em;
-      margin-left: 4em;
+      margin-left: 7em;
     }
 
 .portfolio{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 }
   .portfolio a{
-    margin-left: 1em;
+    margin-left: 6em;
   }
   .portfolio-desktop{
     display: none;
