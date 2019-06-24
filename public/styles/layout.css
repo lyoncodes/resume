@@ -46,7 +46,9 @@ section{
     display: flex;
     justify-content: center;
     width: 25%;
+    max-width: 25%;
     margin-left: 18%;
+    max-height: 94px;
  }
 
  .l-Section-content p{
