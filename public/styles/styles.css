@@ -211,7 +211,80 @@ textarea.form-text-area:focus {
 }
 
 /*DESKTOP*/
-@media screen 
-and(min-width : 1024px){
+@media screen and (min-width : 1024px) {
+    h1{
+        font-size: 7em;
+        color: pink;
+        text-shadow: 3px 3px #5ca8df;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-weight: bold;
+        margin-top: 0px;
+        color: #5ca8df;
+        font-size: 24px;
+    }    
+ /*  header image*/
+    .header-img{
+        display: block;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+    }
+     #header-img-title{
+        margin-top: -99px;
+        margin-bottom: -25px;
+        height: 8em;
+        width: 45%;
+     }
 
+#portfolio-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#portfolio-mobile{
+    display:none;
+}
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* l-Section-content */
+    .l-Section-content p{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .l-Section-content img{
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        margin-left: 0em;
+    }
+    /* Last Gif on Mobile Menu --FIX--*/
+      #social-media{
+        margin-top: 1em;
+        margin-left: 2em;
+      }
+      #desktop-img-first{
+          margin-right: 1em;
+      }
+    .l-Section-content a{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 8%;
+        font-size: 21px;
+        font-style: italic;
+        color: #5ca8df;
+      }
+      .portfolio a{
+        margin-left: 2em;
+        margin-right: 3em;
+      }
 }
