@@ -23,24 +23,16 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/', home)
-// app.get('/home', home)
-// app.get('/resume', resume)
-// app.get('/CVV', cvv)
-// app.get('/nba', nba)
+app.get('/portfolio', portfolio)
+
 
 // Rendering Functions
 function home(req, res) {
  res.render('../views/index.ejs')
 }
-// function resume(req, res) {
-//  res.render('resume')
-// }
-// function cvv(req, res) {
-//  res.render('CVV')
-// }
-// function nba(req, res) {
-//  res.render('nba')
-// }
+function portfolio(req, res){
+  res.render('../views/index.ejs')
+}
 
 // Read & Save Functions
 

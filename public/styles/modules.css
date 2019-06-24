@@ -37,7 +37,7 @@ input[type="text"]:focus{
 }
 
 #header-img-title{
-  margin-top: -70px;
+  margin-top: -99px;
   margin-bottom: -25px;
   height: 8em;
   width: 82%;
@@ -67,10 +67,12 @@ input[type="text"]:focus{
   display: block;
   text-align: center;
   text-decoration: none;
-  margin-left: auto;
+  margin-left: 0px;
   margin-right: auto;
-  font-size: 26px;
-  color: black;
+  margin-top: 8%;
+  font-size: 21px;
+  font-style: italic;
+  color: #5ca8df;
 }
   .l-Section-content a:hover{
     color: #5ca8df;
@@ -78,5 +80,12 @@ input[type="text"]:focus{
 
 #social-media{
   margin-top: 1em;
-  margin-left: 6.6em;
+  margin-left: 4em;
+}
+ .sample a{
+   margin-left: 1em;
+ }
+.sample{
+  display: flex;
+  flex-direction: row;
 }
