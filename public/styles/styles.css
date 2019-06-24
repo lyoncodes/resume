@@ -97,12 +97,6 @@ label{
         margin: auto;
         margin-top: 12px;
     }
-    .l-Section-content img{
-        display: flex;
-        justify-content: center;
-        width: 25%;
-        margin-left: 18%;
-    }
     /* section content input styling*/
     .l-Section-content input{
         height: 2em;
@@ -115,17 +109,6 @@ label{
         text-align: left;
     }
 
-.input-text-area {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5em;
-    margin-left: 7.5em;
-    width: 75%;
-    height: 10em;
-    border-width: 4px 4px 4px 4px;
-    border-style: solid;
-    border-color: pink;
-}
 /* Skills and Qualifications Section Styling */
 #skills{
     background: #7bc8ffb2;
@@ -169,19 +152,66 @@ textarea.form-text-area:focus {
     margin-left: -45px;
 }
 
-/* FOOTER */
-footer{
-    height: 100%;
-    background: black;
-    padding: 10px;
+/*  MEDIA QUERIES */
+
+/* IPAD */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+
+    /*  header image*/
+    .header-img{
+        display: block;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+    }
+     #header-img-title{
+        margin-top: -99px;
+        margin-bottom: -25px;
+        height: 8em;
+        width: 45%;
+     }
+
+    /* l-Section-content */
+    .l-Section-content p{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .l-Section-content img{
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    margin-left: 30%;
+    }
+
+    .l-Section-content a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 0px;
+        margin-right: auto;
+        margin-top: 6%;
+        font-size: 24px;
+        font-style: italic;
+        color: #5ca8df;
+      }
+        /* Last Gif on Mobile Menu --FIX--*/
+        #social-media{
+            margin-top: 1em;
+            margin-left: 14.5em;
+            margin-bottom: 5em;
+        }
+
+    .portfolio{
+        display: flex;
+        flex-direction: row;
+    } 
+
 }
-footer p{
-    color: #5ca8df;
-    margin: 0 auto;
-    text-align: center;
-}
-footer a{
-    text-decoration: none;
-    color: #5ca8df;
-    font-size: 12px;
+
+/*DESKTOP*/
+@media screen 
+and(min-width : 1024px){
+
 }

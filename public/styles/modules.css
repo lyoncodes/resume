@@ -78,14 +78,16 @@ input[type="text"]:focus{
     color: #5ca8df;
   }
 
-#social-media{
-  margin-top: 1em;
-  margin-left: 4em;
+  /* Last Gif on Mobile Menu --FIX--*/
+    #social-media{
+      margin-top: 1em;
+      margin-left: 4em;
+    }
+
+.portfolio{
+display: flex;
+flex-direction: row;
 }
- .sample a{
-   margin-left: 1em;
- }
-.sample{
-  display: flex;
-  flex-direction: row;
-}
+  .portfolio a{
+    margin-left: 1em;
+  }

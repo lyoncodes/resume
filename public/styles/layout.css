@@ -5,7 +5,7 @@
     justify-content: center;
     line-height: 2.75em;
 }
-/* Main Title & Subtitle Layout */
+/*** MAIN TITLE & SUBTITLE LAYOUT ***/
 header{
     align-content: center;
     display: flex;
@@ -24,7 +24,8 @@ header{
 #intro-paragraph{
     margin: 30px;
 }
-/* Section Content Layout */
+
+/*** SECTION CONTENT LAYOUT ***/
 section{
     overflow: hidden;
 }
@@ -40,9 +41,17 @@ section{
     padding-bottom: 12px;
   }
 
-.l-Section-content p{
+/* section content image layout*/
+ .l-Section-content img{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin-left: 18%;
+ }
+
+ .l-Section-content p{
     margin-left: 1em;
-}
+ } 
 
 /*Contact Form Layout/Styling */
 #contact-form{
@@ -51,4 +60,22 @@ section{
     flex-direction: column;
     text-align: center;
     line-height: 2em;
+}
+
+/*IPAD*/
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    .header-img{
+        display: block;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+    }
+
+}
+
+/*DESKTOP*/
+@media screen 
+and(min-width : 1024px){
+
 }
