@@ -1,23 +1,19 @@
 <%- include('../views/head.ejs') %>
     <body>
-        <%- include('../views/nav.ejs') %>
-     <header>
-      <div class="header-content">
-       <h1 id="main-title"> Michael Lyon </h1>
-       <h3 id="main-subtitle"> Content Creator & Technical Copy Writer </h3>
-       <div class="menu-buttons">
-           <form action="/resume" method="GET">
-               <button type="submit">Resume</button>
-           </form>
-           <form action="/CVV" method="GET">
-            <button type="submit">Cover Letter</button>
-           </form>
-           <form action="/nba" method="GET">
-             <button type="submit">Cool Code</button>
-           </form>
-       </div>
+      <div class="wrapper">
+          <%- include('../views/nav.ejs') %>
+            <%- include('../views/header.ejs') %>
+            <img src='https://media.giphy.com/media/lQDTIGdOWGXQOUWtUx/giphy.gif' class="header-img"></img>
+            <img src="/assets/icons/Hello-World.png" class="header-img" id="header-img-title"></img>
+              <%- include('../views/resume.ejs') %>
       </div>
-    </header>
-    </div>
+
+      <!-- <div class="footer">
+        <footer>
+          <p>Thanks for Visiting</p>
+          <p><a href="#">Resume</a></p>
+        </footer>
+      </div> -->
+
     </body>
 </html>

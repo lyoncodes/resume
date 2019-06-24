@@ -5,17 +5,18 @@
 * {
  box-sizing: border-box;
 }
+
 body {
- font-family: Lato, Helvetica, sans-serif;
  margin: 0;
 }
 
-main {
- padding: 20px;
-}
 .intro {
  margin-top: 25%;
  text-align: center;
+}
+
+button{
+    text-transform: uppercase; 
 }
 
 figure {
@@ -23,35 +24,41 @@ figure {
  margin: 15px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 h1{
-    font-size: 84pt;
+    font-size: 3em;
     color: pink;
     text-shadow: 3px 3px #5ca8df;
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
 h2{
     font-size: 24pt;
     margin-top: 15px;
 }
+
 h3 {
-    font-size: 16pt;
     font-weight: bold;
     margin-top: 0px;
-    margin-bottom: 75px;
     color: #5ca8df;
-}
-    .contact-title {
-    text-align: center;
-    margin: 10px auto;
-    }
-
-h4 {
     font-size: 18px;
 }
- .section-title {
-     margin-bottom: 8px;
- }
+
+h4 {
+    font-size: 21px;
+    text-align: center;
+}
+
+
 h5 {
     font-size: 14px;
 }
@@ -64,117 +71,229 @@ h5 {
     margin-bottom: 0;
     display: inline-block;
 }
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) {
-    #main-title {
-        font-size: 62px;
-    }
-    #main-subtitle {
-        font-size: 18px;
-    }
-    .l-Section-content ul{
-        margin: 10px;
-        padding-left: 12px;
-    }
-    .cvv{
-        margin: 25px 20px 25px;
-    }
+
+p {
+    font-size: 18px;
+}
+span{
+    font-family: 'Josefin Sans', sans-serif;
+}
+label{
+    font-family: 'Josefin Sans', cursive;
 }
 
+.l-Section-content {
+    font-family: 'Oswald', serif;
+}
+    /* Section content default button styling */
+    .l-Section-content button{
+        border: 2px solid lightblue;
+        border-radius: 2px;
+        background: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        margin-top: 12px;
+    }
+    /* section content input styling*/
+    .l-Section-content input{
+        height: 2em;
+        width: 50%;
+        border-bottom: 2px solid lightblue;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        font-size: .9em;
+        text-align: left;
+    }
 
-.Title-sub {
-    font-size: 0.64em;
-    letter-spacing: 0.16em;
-    font-weight: 400;
-    display: block
-}
-.sub-list {
-    font-size: .90em;
-    list-style-type: disc;
-}
-.sub-list li{
-    margin-top: 4px;
-}
-
-.input-text-area {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5em;
-    margin-left: 7.5em;
-    width: 75%;
-    height: 10em;
-    border-width: 4px 4px 4px 4px;
-    border-style: solid;
-    border-color: pink;
-}
-/* CONTACT ME */
-div.contact {
-    margin-top: 5vw;
-    margin: 50px;
-    padding-top: 20px;
-    color: black;
-    font-family: Lato, Helvetica, sans-serif;
-    
+/* Skills and Qualifications Section Styling */
+#skills{
+    background: #7bc8ffb2;
+    margin-top: 2em;
 }
 
-.info {
+/* CONTACT FORM */
+.l-Section-content #contact-form {
     display: flex;
     justify-content: space-around;
-    /* flex-direction: column; */
-    margin: 50px auto;
+    margin: auto;
     color: black;
-    font-size: 20px;
-}
-
-.contact-info {
-}
-
-#formAl button {
-    background-color: #c1ddf1;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Lato;
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    padding: 20px;
-    width: 180px;
-    color: white;
-    border-radius: 1px;    
-}
-    #formAl button:hover {
-        background-color: black;
-        color: #5ca8df;
-        transition: 0.3s;
-        border: none;
-        outline: none;
-    }
-input.form-input {
-    border: none;
-    height: 30px;
-    border-bottom: 4.5px solid black;
-    background-color: transparent;
-    text-align: center;
-    margin-bottom: 20px;
-    color: black;
-    outline: none;
-    font-size: .9em;
-    font-family: Lato, Helvetica, sans-serif;   
-}
-
-p.msg-label {
-    margin-right: 23px;
 }
 
 textarea.form-text-area {
-    border: none;
-    border: 4.5px solid black;
-    margin-right: 6px;
+    height: 1em;
+    width: 50%;
+    border: 2px solid lightblue;
     background-color: transparent;
     font-size: .9em;
-    height: 80px;
-    width: 275px;
-    color: black;
-    font-family: Lato, Helvetica, sans-serif;
+    color: white;
+    margin-top: 2em;
+    padding: 12.5px;
+    border-radius: 1px;
+    overflow-y: hidden; 
+}
+
+textarea.form-text-area:focus {
+    height: 6em;
+    border: 2px solid #10e3eb;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#form{
+    background: #4e80a3c4;
+}
+
+#contact-form-fields{
+    margin-left: -45px;
+}
+
+/*  MEDIA QUERIES */
+
+/* IPAD */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+
+    /*  header image*/
+    .header-img{
+        display: block;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+    }
+     #header-img-title{
+        margin-top: -99px;
+        margin-bottom: -25px;
+        height: 8em;
+        width: 45%;
+     }
+
+    /* l-Section-content */
+    .l-Section-content p{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .l-Section-content img{
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    margin-left: 28%;
+    }
+
+    .l-Section-content a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 0px;
+        margin-right: auto;
+        margin-top: 6%;
+        font-size: 24px;
+        font-style: italic;
+        color: #5ca8df;
+      }
+        /* Last Gif on Mobile Menu --FIX--*/
+        #social-media{
+            margin-top: 1em;
+            margin-left: 13.5em;
+            margin-bottom: 5em;
+        }
+
+    .portfolio{
+        display: flex;
+        flex-direction: row;
+    }
+    /* section ul and li */
+    section ul{
+        margin-left: 20%;
+        margin-bottom: 27.9px;
+        width: 100%;
+    } 
+
+}
+
+/*DESKTOP*/
+@media screen and (min-width : 1024px) {
+    h1{
+        font-size: 7em;
+        color: pink;
+        text-shadow: 3px 3px #5ca8df;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-weight: bold;
+        margin-top: 0px;
+        color: #5ca8df;
+        font-size: 24px;
+    }
+    .wrapper{
+        margin-bottom: 10em;
+    }    
+ /*  header image*/
+    .header-img{
+        display: block;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+    }
+     #header-img-title{
+        margin-top: -99px;
+        margin-bottom: -25px;
+        height: 8em;
+        width: 45%;
+     }
+
+.portfolio-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.portfolio-mobile{
+    display:none;
+}
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* l-Section-content */
+    .l-Section-content p{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .l-Section-content img{
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        margin-left: 0em;
+    }
+    /* Last Gif on Mobile Menu --FIX--*/
+      #social-media{
+        margin-top: 1em;
+        margin-left: 2em;
+      }
+      #desktop-img-first{
+          margin-right: 1em;
+      }
+    .l-Section-content a{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 8%;
+        font-size: 21px;
+        font-style: italic;
+        color: #5ca8df;
+      }
+      .portfolio a{
+        margin-left: 2em;
+        margin-right: 3em;
+      }
 }

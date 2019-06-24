@@ -1,9 +1,8 @@
-/* Form */
-input, textarea, button, select{
-  font-family: Arial, Helvetica, sans-serif;
+input, button, select{
+  font-family: 'Josefin Sans', cursive;
   height: 50px;
   border: 0;
-  margin-left: -3px;
+  text-align: center;
 }
 header input{
  padding: 10px;
@@ -14,17 +13,16 @@ header input{
  transition: 0.3s;
 }
 header button{
-   background-color: #c1ddf1;
-   text-align: center;
-   text-transform: uppercase;
-   font-family: Lato;
-   position: relative;
-   overflow: hidden;
-   margin: 10px;
-   padding: 20px;
-   width: 180px;
-   color: white;
-   border-radius: 1px;
+  background-color: #c1ddf1;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  width: 180px;
+  color: white;
+  border-radius: 1px;
 }
 header input[type="text"]:focus, header select:focus, header button:hover{
  background-color: black;
@@ -32,39 +30,67 @@ header input[type="text"]:focus, header select:focus, header button:hover{
  transition: 0.3s;
  border: none;
  outline: none;
-
 }
+
+input[type="text"]:focus{
+  border-bottom: 1px solid #10e3eb;
+}
+
+#header-img-title{
+  margin-top: -99px;
+  margin-bottom: -25px;
+  height: 8em;
+  width: 82%;
+}
+/* Emboldened Text Tag */
 .Tag {
-  color: #5ca8df;
-  text-shadow: .5px .5px 0 pink;
   font-weight: 700;
   line-height: 1;
   position: relative;
   display: inline-block;
   padding-left: 1px;
   padding-right: 1px;
+  font-family: 'Josefin Sans', sans-serif;
 }
-.menu-buttons{
-  margin-top: 35px;
-  display: flex;
-  justify-content: center
 
-}
-@media screen and (max-width: 589px) {
-  .menu-buttons {
-  flex-direction: column;
-  }
-}
-.nav-links{
-  display: flex;
-  justify-content: center;
-  line-height: 2.75em;
-}
+/* Nav Link Colors & Effects */
 .nav-links a{
   color: pink;
   text-decoration: none;
-  padding: 20px
+  padding: 20px;
 }
-.nav-links a:hover{
+  .nav-links a:hover{
+    color: #5ca8df;
+  }
+
+.l-Section-content a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: 8%;
+  font-size: 21px;
+  font-style: italic;
   color: #5ca8df;
 }
+  .l-Section-content a:hover{
+    color: #5ca8df;
+  }
+
+  /* Last Gif on Mobile Menu --FIX--*/
+    #social-media{
+      margin-top: 1em;
+      margin-left: 4em;
+    }
+
+.portfolio{
+display: flex;
+flex-direction: row;
+}
+  .portfolio a{
+    margin-left: 1em;
+  }
+  .portfolio-desktop{
+    display: none;
+  }
