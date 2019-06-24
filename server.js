@@ -23,6 +23,7 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/', home)
+app.get('/portfolio', portfolio)
 // app.get('/home', home)
 // app.get('/resume', resume)
 // app.get('/CVV', cvv)
@@ -31,6 +32,9 @@ app.get('/', home)
 // Rendering Functions
 function home(req, res) {
  res.render('../views/index.ejs')
+}
+function portfolio(req, res){
+  res.render('../views/index.ejs')
 }
 // function resume(req, res) {
 //  res.render('resume')
