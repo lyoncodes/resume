@@ -91,6 +91,6 @@ flex-direction: row;
   .portfolio a{
     margin-left: 1em;
   }
-  #portfolio-desktop{
+  .portfolio-desktop{
     display: none;
   }
