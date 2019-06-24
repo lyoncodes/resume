@@ -218,22 +218,24 @@ textarea.form-text-area:focus {
 
 /*DESKTOP*/
 @media screen and (min-width : 1025px) {
-    h1{
-        font-size: 7em;
-        color: pink;
-        text-shadow: 3px 3px #5ca8df;
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-    h3 {
-        font-weight: bold;
-        margin-top: 0px;
-        color: #5ca8df;
-        font-size: 24px;
-    }
-    .wrapper{
-        margin-bottom: 10em;
-    }    
+/* BODY STYLING */
+.wrapper{
+    margin-bottom: 10em;
+}    
+/* HEADER CONTENT */
+h1{
+    font-size: 7em;
+    color: pink;
+    text-shadow: 3px 3px #5ca8df;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+h3{
+    font-weight: bold;
+    margin-top: 0px;
+    color: #5ca8df;
+    font-size: 24px;
+}
  /*  header image*/
     .header-img{
         display: block;
@@ -256,6 +258,7 @@ textarea.form-text-area:focus {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 .portfolio-mobile{
     display:none;
 }
@@ -293,7 +296,7 @@ textarea.form-text-area:focus {
         color: #5ca8df;
       }
       .portfolio a{
-        margin-left: 2em;
-        margin-right: 3em;
+        margin-left: 1em;
+        margin-right: 2em;
       }
 }
