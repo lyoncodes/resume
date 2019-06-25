@@ -157,7 +157,19 @@ textarea.form-text-area:focus {
 /* IPAD */
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 
-    /*  header image*/
+    .portfolio-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .portfolio-mobile{
+        display:none;
+    }
+
+    /*  header image */
     .header-img{
         display: block;
         margin-top: -10px;
@@ -177,20 +189,18 @@ textarea.form-text-area:focus {
         margin-left: 25%;
         margin-right: 25%;
     }
-
     .l-Section-content img{
-    display: flex;
-    justify-content: center;
-    width: 18%;
-    margin-left: 28%;
-    }
-
+        display: flex;
+        flex-direction: column;
+        max-width: 30%;
+        margin-left: 0px;
+     }
     .l-Section-content a{
         display: block;
         text-align: center;
         text-decoration: none;
-        margin-left: 0px;
-        margin-right: auto;
+        margin-left: 40px;
+        margin-right: 50px;
         margin-top: 6%;
         font-size: 24px;
         font-style: italic;
@@ -199,8 +209,8 @@ textarea.form-text-area:focus {
         /* Last Gif on Mobile Menu --FIX--*/
         #social-media{
             margin-top: 1em;
-            margin-left: 13.5em;
-            margin-bottom: 5em;
+            margin-left: 0em;
+            margin-bottom: 1em;
         }
 
     .portfolio{
@@ -218,22 +228,25 @@ textarea.form-text-area:focus {
 
 /*DESKTOP*/
 @media screen and (min-width : 1025px) {
-    h1{
-        font-size: 7em;
-        color: pink;
-        text-shadow: 3px 3px #5ca8df;
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-    h3 {
-        font-weight: bold;
-        margin-top: 0px;
-        color: #5ca8df;
-        font-size: 24px;
-    }
-    .wrapper{
-        margin-bottom: 10em;
-    }    
+
+/* BODY STYLING */
+.wrapper{
+    margin-bottom: 10em;
+}    
+/* HEADER CONTENT STYLINGß */
+h1{
+    font-size: 7em;
+    color: pink;
+    text-shadow: 3px 3px #5ca8df;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+h3{
+    font-weight: bold;
+    margin-top: 0px;
+    color: #5ca8df;
+    font-size: 24px;
+}
  /*  header image*/
     .header-img{
         display: block;
@@ -256,6 +269,7 @@ textarea.form-text-area:focus {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 .portfolio-mobile{
     display:none;
 }
@@ -293,7 +307,7 @@ textarea.form-text-area:focus {
         color: #5ca8df;
       }
       .portfolio a{
-        margin-left: 2em;
-        margin-right: 3em;
+        margin-left: 1em;
+        margin-right: 2em;
       }
 }
