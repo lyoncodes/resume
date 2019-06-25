@@ -92,6 +92,7 @@ input[type="text"]:focus{
 .portfolio{
 display: flex;
 flex-direction: column;
+justify-content: center;
 }
   .portfolio a{
     margin-left: 6em;
