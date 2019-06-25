@@ -69,7 +69,7 @@ input[type="text"]:focus{
   text-decoration: none;
   margin-left: 0px;
   margin-right: auto;
-  margin-top: 8%;
+  margin-top: 4%;
   font-size: 21px;
   font-style: italic;
   color: #5ca8df;
@@ -77,8 +77,11 @@ input[type="text"]:focus{
   .l-Section-content a:hover{
     color: #5ca8df;
   }
+  #portfolio-nav{
+    margin-left: 6em;
+  }
   #resume-link{
-    margin-left: 7.2em;
+    margin-left: 7.35em;
   }
   #social-media-link{
     margin-left: 6.6em;
@@ -86,7 +89,7 @@ input[type="text"]:focus{
   /* Last Gif on Mobile Menu --FIX--*/
     #social-media{
       margin-top: 1em;
-      margin-left: 7em;
+      margin-bottom: 1em;
     }
 
 .portfolio{
@@ -95,7 +98,7 @@ flex-direction: column;
 justify-content: center;
 }
   .portfolio a{
-    margin-left: 6em;
+    margin-left: 5.5em;
   }
   .portfolio-desktop{
     display: none;
