@@ -45,8 +45,10 @@ section{
  .l-Section-content img{
     display: flex;
     justify-content: center;
-    width: 45%;
-    margin-left: 27%;
+    width: 60%;
+ }
+ .gif-a{
+     margin-top: 0em;
  }
 
  .l-Section-content p{
