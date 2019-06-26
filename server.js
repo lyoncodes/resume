@@ -24,6 +24,7 @@ app.set('view engine', 'ejs')
 // Routes
 app.get('/', home)
 app.get('/portfolio', portfolio)
+app.get('/facebook', facebook)
 
 
 // Rendering Functions
@@ -31,7 +32,10 @@ function home(req, res) {
  res.render('../views/index.ejs')
 }
 function portfolio(req, res){
-  res.render('../views/index.ejs')
+  res.render('../views/socialMedia.ejs')
+}
+function facebook(req, res){
+  res.render('../views/facebook.ejs')
 }
 
 // Read & Save Functions
