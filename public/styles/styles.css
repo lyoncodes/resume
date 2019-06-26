@@ -71,7 +71,9 @@ h5 {
     margin-bottom: 0;
     display: inline-block;
 }
-
+a{
+    text-decoration: none;
+}
 p {
     font-size: 18px;
 }
@@ -152,7 +154,39 @@ textarea.form-text-area:focus {
     margin-left: -45px;
 }
 
-/*  MEDIA QUERIES */
+/* SOCIAL MEDIA PAGE */
+
+.card {
+    padding: 1.5em 1em;
+    border: 1px solid #10e3eb;
+    border-radius: 0.25em;
+    text-align: center;
+}
+.card h4 {
+    font-family: 'Josefin Sans' sans-serif;
+    color: pink;
+    margin: 0;
+    line-height: 1.25;
+}
+.portfolio-slide{
+    margin-left: auto;
+    margin-right: auto;
+    height: 15%;
+    width: 50%;
+}
+.main-content{
+    margin: 2em auto;
+    width: 95%;
+    max-width: 1000px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    grid-gap: 20px;
+}
+
+/******  MEDIA QUERIES ******/
 
 /* IPAD */
 @media screen and (min-width : 768px) and (max-width : 1024px) {
@@ -260,7 +294,7 @@ h3{
         margin-top: -99px;
         margin-bottom: -25px;
         height: 8em;
-        width: 45%;
+        max-width: 45%;
      }
 
 .portfolio-desktop{
