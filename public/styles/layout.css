@@ -7,22 +7,14 @@
 }
 /*** MAIN TITLE & SUBTITLE LAYOUT ***/
 header{
-    align-content: center;
-    display: flex;
-    justify-content: center;
     text-align: center;
     width: 100%;
 }
 .header-img{
     display: block;
-    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-/* Opening Paragraph Layout */
-#intro-paragraph{
-    margin: 30px;
 }
 
 /*** SECTION CONTENT LAYOUT ***/
@@ -33,7 +25,7 @@ section{
  section ul{
   margin-left: 20px;
   margin-bottom: 27.9px;
-  width: 88%;
+  max-width: 88%;
  }
   section li{
     font-size: 16px;
@@ -43,16 +35,11 @@ section{
 
 /* section content image layout*/
  .l-Section-content img{
-    display: flex;
-    justify-content: center;
-    width: 60%;
- }
- .gif-a{
-     margin-top: 0em;
+    width: 40%;
  }
 
  .l-Section-content p{
-    margin-left: 1em;
+    margin: 30px 35px;
  } 
 
 /*Contact Form Layout/Styling */

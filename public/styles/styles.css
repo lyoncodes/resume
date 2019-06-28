@@ -75,7 +75,10 @@ a{
     text-decoration: none;
 }
 p {
+    color: #5ca8df;
     font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 span{
     font-family: 'Josefin Sans', sans-serif;
@@ -85,7 +88,7 @@ label{
 }
 
 .l-Section-content {
-    font-family: 'Oswald', serif;
+    font-family: 'Josefin Sans', serif;
 }
     /* Section content default button styling */
     .l-Section-content button{
@@ -191,7 +194,7 @@ textarea.form-text-area:focus {
 /* IPAD */
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 
-    .portfolio-desktop{
+    .desktop-display{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -199,7 +202,7 @@ textarea.form-text-area:focus {
         margin-right: 10%;
     }
     
-    .portfolio-mobile{
+    .mobile-display{
         display:none;
     }
 
@@ -297,7 +300,7 @@ h3{
         max-width: 45%;
      }
 
-.portfolio-desktop{
+.desktop-display{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -305,7 +308,7 @@ h3{
     margin-right: 10%;
 }
 
-.portfolio-mobile{
+.mobile-display{
     display:none;
 }
 .portfolio{
@@ -339,7 +342,7 @@ h3{
         margin-top: 8%;
         font-size: 21px;
         font-style: italic;
-        color: #5ca8df;
+        color: pink;
       }
       .portfolio a{
         margin-left: 1em;
