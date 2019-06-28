@@ -23,7 +23,7 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/', home)
-app.get('/portfolio', portfolio)
+app.get('/social', social)
 app.get('/facebook', facebook)
 
 
@@ -31,7 +31,7 @@ app.get('/facebook', facebook)
 function home(req, res) {
  res.render('../views/index.ejs')
 }
-function portfolio(req, res){
+function social(req, res){
   res.render('../views/socialMedia.ejs')
 }
 function facebook(req, res){

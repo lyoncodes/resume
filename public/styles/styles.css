@@ -191,6 +191,14 @@ textarea.form-text-area:focus {
 
 /******  MEDIA QUERIES ******/
 
+/* iPhone Landscape */
+
+@media screen and (min-width : 667px) and (max-width : 767px) {
+    .l-Section-content img {
+        max-width: 25%;
+    }
+}
+
 /* IPAD */
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 
@@ -251,10 +259,6 @@ textarea.form-text-area:focus {
             margin-bottom: 1em;
         }
 
-    .portfolio{
-        display: flex;
-        flex-direction: row;
-    }
     /* section ul and li */
     section ul{
         margin-left: 20%;
@@ -336,16 +340,11 @@ h3{
           margin-right: 1em;
       }
     .l-Section-content a{
-        display: flex;
-        text-align: center;
-        text-decoration: none;
-        margin-top: 8%;
         font-size: 21px;
         font-style: italic;
         color: pink;
       }
       .portfolio a{
-        margin-left: 1em;
-        margin-right: 2em;
+          margin: -1em 2em 0em 1em;
       }
 }
