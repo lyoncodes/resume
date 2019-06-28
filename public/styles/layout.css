@@ -32,6 +32,18 @@ section{
     line-height: 2em;
     padding-bottom: 12px;
   }
+ /* portfolio section grid layout */
+ .portfolio{
+    margin: 2em auto;
+    width: 95%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 667px));
+    grid-gap: 20px;
+ }
+  .desktop-display{
+    display: none;
+  }
 
 /* section content image layout*/
  .l-Section-content img{
@@ -50,5 +62,3 @@ section{
     text-align: center;
     line-height: 2em;
 }
-
-/*IPAD*/
