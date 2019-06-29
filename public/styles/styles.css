@@ -267,7 +267,16 @@ textarea.form-text-area:focus {
         margin-left: 20%;
         margin-bottom: 27.9px;
         width: 100%;
-    } 
+    }
+
+.card p{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+.portfolio-slide{
+    width: 50%;
+} 
 
 }
 
@@ -343,4 +352,15 @@ h3{
     .l-Section-content a{
         font-style: italic;
     }
+
+
+.card p{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+.portfolio-slide{
+    width: 50%;
+}
+
 }
