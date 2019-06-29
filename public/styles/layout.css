@@ -41,9 +41,6 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(280px, 667px));
     grid-gap: 20px;
  }
-  .desktop-display{
-    display: none;
-  }
 
 /* section content image layout*/
  .l-Section-content img{
