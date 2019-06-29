@@ -164,7 +164,6 @@ textarea.form-text-area:focus {
 
 .card {
     padding: 1.5em 1em;
-    border: 1px solid #10e3eb;
     border-radius: 0.25em;
     text-align: center;
 }
@@ -174,14 +173,19 @@ textarea.form-text-area:focus {
     margin: 0;
     line-height: 1.25;
 }
+.card p{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 1em;
+}
 .portfolio-slide{
     margin-left: auto;
     margin-right: auto;
     height: 15%;
-    width: 50%;
+    width: 90%;
 }
 .main-content{
-    margin: 2em auto;
+    margin: 1em auto;
     width: 95%;
     max-width: 1000px;
 
