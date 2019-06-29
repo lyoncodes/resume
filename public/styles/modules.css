@@ -36,16 +36,17 @@ input[type="text"]:focus{
   border-bottom: 1px solid #10e3eb;
 }
 
+/* Styled Script -- Header Image*/
 #header-img-title{
   margin-top: -99px;
   margin-bottom: -25px;
-  height: 8em;
-  width: 82%;
+  min-height: 8em;
+  width: 17em;
 }
 /* Emboldened Text Tag */
 .Tag {
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.5em;
   position: relative;
   display: inline-block;
   padding-left: 1px;
@@ -63,43 +64,14 @@ input[type="text"]:focus{
     color: #5ca8df;
   }
 
+/* Section Content <a> Tags*/
 .l-Section-content a{
   display: block;
   text-align: center;
   text-decoration: none;
-  margin-left: 0px;
-  margin-right: auto;
-  margin-top: 4%;
   font-size: 21px;
-  font-style: italic;
-  color: #5ca8df;
+  color: pink;
 }
   .l-Section-content a:hover{
     color: #5ca8df;
-  }
-  #portfolio-nav{
-    margin-left: 6em;
-  }
-  #resume-link{
-    margin-left: 7.35em;
-  }
-  #social-media-link{
-    margin-left: 6.6em;
-  }
-  /* Last Gif on Mobile Menu --FIX--*/
-    #social-media{
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-
-.portfolio{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-  .portfolio a{
-    margin-left: 5.5em;
-  }
-  .portfolio-desktop{
-    display: none;
   }

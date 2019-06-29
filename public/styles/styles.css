@@ -71,9 +71,14 @@ h5 {
     margin-bottom: 0;
     display: inline-block;
 }
-
+a{
+    text-decoration: none;
+}
 p {
+    color: #5ca8df;
     font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 span{
     font-family: 'Josefin Sans', sans-serif;
@@ -83,7 +88,10 @@ label{
 }
 
 .l-Section-content {
-    font-family: 'Oswald', serif;
+    font-family: 'Josefin Sans', serif;
+}
+.desktop-display{
+    display: none;
 }
     /* Section content default button styling */
     .l-Section-content button{
@@ -152,12 +160,55 @@ textarea.form-text-area:focus {
     margin-left: -45px;
 }
 
-/*  MEDIA QUERIES */
+/* SOCIAL MEDIA PAGE */
+
+.card {
+    padding: 1.5em 1em;
+    border-radius: 0.25em;
+    text-align: center;
+}
+.card h4 {
+    font-family: 'Josefin Sans' sans-serif;
+    color: pink;
+    margin: 0;
+    line-height: 1.25;
+}
+.card p{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 1em;
+}
+.portfolio-slide{
+    margin-left: auto;
+    margin-right: auto;
+    height: 15%;
+    width: 90%;
+}
+.main-content{
+    margin: 1em auto;
+    width: 95%;
+    max-width: 1000px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    grid-gap: 20px;
+}
+
+/******  MEDIA QUERIES ******/
+
+/* iPhone Landscape */
+@media screen and (min-width : 667px) and (max-width : 767px) {
+    .l-Section-content img {
+        max-width: 25%;
+    }
+}
 
 /* IPAD */
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 
-    .portfolio-desktop{
+    .desktop-display{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -165,7 +216,7 @@ textarea.form-text-area:focus {
         margin-right: 10%;
     }
     
-    .portfolio-mobile{
+    .mobile-display{
         display:none;
     }
 
@@ -190,11 +241,10 @@ textarea.form-text-area:focus {
         margin-right: 25%;
     }
     .l-Section-content img{
-        display: flex;
-        flex-direction: column;
-        max-height: 100%;
-        max-width: 23%;
-        margin-left: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 30%;
      }
     .l-Section-content a{
         display: block;
@@ -210,14 +260,8 @@ textarea.form-text-area:focus {
         /* Last Gif on Mobile Menu --FIX--*/
         #social-media{
             margin-top: 1em;
-            margin-left: 0em;
-            margin-bottom: 1em;
         }
 
-    .portfolio{
-        display: flex;
-        flex-direction: row;
-    }
     /* section ul and li */
     section ul{
         margin-left: 20%;
@@ -229,6 +273,16 @@ textarea.form-text-area:focus {
 
 /*DESKTOP*/
 @media screen and (min-width : 1025px) {
+
+/* Display Hide/Show */
+.desktop-display{
+    display: block;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+.mobile-display{
+    display:none;
+}
 
 /* BODY STYLING */
 .wrapper{
@@ -254,61 +308,39 @@ h3{
         margin-top: -10px;
         margin-left: auto;
         margin-right: auto;
-        width: 15%;
+        width: 25%;
     }
      #header-img-title{
-        margin-top: -99px;
-        margin-bottom: -25px;
-        height: 8em;
-        width: 45%;
+        margin-top: -117px;   
+        width: 50%;
      }
 
-.portfolio-desktop{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.portfolio-mobile{
-    display:none;
-}
+/* SECTION CONTENT STYLING */
 .portfolio{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 /* l-Section-content */
     .l-Section-content p{
         margin-left: 30%;
         margin-right: 30%;
     }
     .l-Section-content img{
-        display: flex;
-        justify-content: center;
-        width: 15%;
-        margin-left: 0em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
     }
     /* Last Gif on Mobile Menu --FIX--*/
       #social-media{
         margin-top: 1em;
-        margin-left: 2em;
       }
       #desktop-img-first{
           margin-right: 1em;
       }
     .l-Section-content a{
-        display: flex;
-        text-align: center;
-        text-decoration: none;
-        margin-top: 8%;
-        font-size: 21px;
         font-style: italic;
-        color: #5ca8df;
-      }
-      .portfolio a{
-        margin-left: 1em;
-        margin-right: 2em;
-      }
+    }
 }
