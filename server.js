@@ -22,9 +22,10 @@ client.on('error', err => console.error(err))
 app.set('view engine', 'ejs')
 
 // Routes
-app.get('/', home)
-app.get('/social', social)
-app.get('/facebook', facebook)
+app.get('/', home);
+app.get('/social', social);
+app.get('/samples', samples);
+app.get('/facebook', facebook);
 
 
 // Rendering Functions
@@ -33,6 +34,9 @@ function home(req, res) {
 }
 function social(req, res){
   res.render('../views/socialMedia.ejs')
+}
+function samples(req, res){
+  res.render('../views/samples.ejs')
 }
 function facebook(req, res){
   res.render('../views/facebook.ejs')
