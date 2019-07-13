@@ -49,6 +49,12 @@ section{
 
  .l-Section-content p{
     margin: 30px 35px;
+ }
+
+ .l-Section-content audio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
  } 
 
 /*Contact Form Layout/Styling */
