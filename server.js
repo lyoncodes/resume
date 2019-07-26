@@ -26,6 +26,7 @@ app.get('/', home);
 app.get('/social', social);
 app.get('/samples', samples);
 app.get('/facebook', facebook);
+app.get('/credit', credit);
 
 
 // Rendering Functions
@@ -40,6 +41,10 @@ function samples(req, res){
 }
 function facebook(req, res){
   res.render('../views/facebook.ejs')
+}
+
+function credit(req, res){
+  res.render('../views/credit.ejs')
 }
 
 // Read & Save Functions
