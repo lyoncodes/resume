@@ -37,7 +37,7 @@ h1{
     font-size: 3em;
     color: pink;
     text-shadow: 3px 3px #5ca8df;
-    margin-top: 0px;
+    margin-top: .5em;
     margin-bottom: 10px;
 }
 
@@ -86,6 +86,7 @@ p {
 }
 span{
     font-family: 'Josefin Sans', sans-serif;
+    color: #5ca8df;
 }
 label{
     font-family: 'Josefin Sans', cursive;
@@ -163,6 +164,9 @@ textarea.form-text-area:focus {
 #contact-form-fields{
     margin-left: -45px;
 }
+    #contact-form span{
+        color: #111;
+    }
 
 /* SOCIAL MEDIA PAGE */
 
@@ -172,7 +176,6 @@ textarea.form-text-area:focus {
     text-align: center;
 }
 .card h4 {
-    font-family: 'Josefin Sans' sans-serif;
     color: pink;
     margin: 0;
     line-height: 1.25;
@@ -327,7 +330,9 @@ textarea.form-text-area:focus {
 
 /*DESKTOP*/
 @media screen and (min-width : 1025px) {
-
+body{
+    overflow: auto;
+}
 /* Display Hide/Show */
 .desktop-display{
     display: block;
@@ -339,15 +344,13 @@ textarea.form-text-area:focus {
 }
 
 /* BODY STYLING */
-.wrapper{
-    margin-bottom: 10em;
-}    
+   
 /* HEADER CONTENT STYLINGß */
 h1{
     font-size: 7em;
     color: pink;
     text-shadow: 3px 3px #5ca8df;
-    margin-top: 0px;
+    margin-top: .5em;
     margin-bottom: 10px;
 }
 h3{
@@ -355,6 +358,9 @@ h3{
     margin-top: 0px;
     color: #5ca8df;
     font-size: 24px;
+}
+.nav-links{
+    line-height: 1.75em;
 }
  /*  header image*/
     .header-img{

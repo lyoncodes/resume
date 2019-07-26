@@ -50,6 +50,9 @@ section{
  .l-Section-content p{
     margin: 30px 35px;
  }
+    #intro-paragraph p{
+        margin-bottom: 3em;
+    }
 
  .l-Section-content audio{
     display: block;
