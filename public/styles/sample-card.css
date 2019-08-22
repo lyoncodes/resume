@@ -1,0 +1,167 @@
+/* WORK SAMPLE 1 */
+.sp-container{
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sp-container h2 {
+  color: #3e3e3e;
+  font-family: 'Cormorant SC', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.89px;
+  margin: 4px 0;
+  color: #3e3e3e;
+}
+#main-spa-title {
+    color: #3e3e3e;
+    font-family: 'Cormorant SC';
+    font-size: 72px;
+    text-shadow: none;
+    margin-top: 0em;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+.lines{
+    color: #3e3e3e;
+    margin-top: 4em;
+    position: relative;
+    font-family: 'Cormorant SC', sans-serif;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -25%)
+}
+
+.sp-card {
+  cursor: default;
+  margin:  20px ;
+  padding: 14px;
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 23px 23px 7px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+}
+  .sp-card:hover{
+    transform: scale(1.05);
+    transition: all 200ms ease-out;
+  }
+  
+  .sp-card:hover .sp-overlay{
+    cursor: pointer;
+    bottom: -30px;
+    right: -30px;
+    transition: all 200ms ease-out;
+  }
+  
+  .sp-info {
+    height: 35%;
+  }
+    .sp-title {
+      color: #969db8;
+      font-family: 'Cormorant SC';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.67px;
+      color: #969db8;
+    }
+    .sp-copy {
+      color: #525252;
+      font-family: 'Khula';
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.44px;
+      margin-top: 5px;
+    }
+
+  .sp-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-family: 'Cormorant SC';
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    margin-top: 31.5px;
+    color: #272626;
+    padding: 0;
+  }
+  .sp-overlay {
+    background-color: #272626;
+    height: 100px;
+    width: 110px;
+    border-radius: 10%;
+    position: absolute;
+    bottom: -120px;
+    right: -120px;
+    transition: all 200ms ease-in;
+  }
+
+.sp-actions {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.sp-heart-container {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.sp-heart {
+  background-color: white;
+  display: inline-block;
+  height: 20px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+
+    .sp-heart:before,
+    .sp-heart:after {
+        content: "";
+        background-color: white;
+        border-radius: 50%;
+        height: 20px;
+        position: absolute;
+        width: 20px;
+    }
+
+    .sp-heart:before {
+      top: -12px;
+      left: 0;
+    }
+
+    .sp-heart:after {
+      left: 12px;
+      top: 0;
+    }
+
+.sp-img{
+  height: 40%;
+  object-fit: contain;
+}

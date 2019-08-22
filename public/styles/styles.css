@@ -1,5 +1,8 @@
 @import url('./layout.css');
 @import url('./modules.css');
+@import url('./sample-card.css');
+@import url('./sample-card2.css');
+@import url('./contact-form.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 * {
@@ -128,48 +131,7 @@ label{
     margin-top: 2em;
 }
 
-/* CONTACT FORM */
-.l-Section-content #contact-form {
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    color: black;
-}
-
-textarea.form-text-area {
-    height: 1em;
-    width: 50%;
-    border: 2px solid lightblue;
-    background-color: transparent;
-    font-size: .9em;
-    color: white;
-    margin-top: 2em;
-    padding: 12.5px;
-    border-radius: 1px;
-    overflow-y: hidden; 
-}
-
-textarea.form-text-area:focus {
-    height: 6em;
-    border: 2px solid #10e3eb;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-#form{
-    background: #4e80a3c4;
-}
-
-#contact-form-fields{
-    margin-left: -45px;
-}
-    #contact-form span{
-        color: #111;
-    }
-
 /* SOCIAL MEDIA PAGE */
-
 .card {
     padding: 1.5em 1em;
     border-radius: 0.25em;
