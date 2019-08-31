@@ -1,7 +1,6 @@
 /* WORK SAMPLE 1 */
 .sp-container{
   display: flex;
-  margin-top: 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -32,11 +31,11 @@
 
 .lines{
     color: #3e3e3e;
-    margin-top: 4em;
+    margin-top: 6em;
     position: relative;
     font-family: 'Cormorant SC', sans-serif;
     left: 50%;
-    margin-right: 50%;
+    margin-right: 30%;
     transform: translate(-50%, -25%)
 }
 
@@ -164,4 +163,15 @@
 .sp-img{
   height: 40%;
   object-fit: contain;
+}
+
+/*DESKTOP*/
+@media screen and (min-width : 1025px) {
+  .lines{
+    margin-top: 4em;
+    margin-right: 50%;
+  }
+  .sp-container{
+    margin-top: 4em;
+  }
 }
