@@ -9,14 +9,14 @@
 }
 
   #interior{
-    background: url('../assets/icons/apt-interior.jpg')    no-repeat center center fixed;
+    background: url('../assets/icons/apt-interior.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
   #amenities{
-    background: url('../assets/icons/amenity.jpg')    no-repeat center center fixed;
+    background: url('../assets/icons/amenity.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,7 +24,7 @@
   }
 
 .apt-body h1{
-  color: white;
+  color: black;
   font-family: 'Libre Caslon Display';
   font-size: 5em;
   font-weight: 100;
@@ -32,6 +32,21 @@
   margin-top: 0;
   text-shadow: none;
 }
+
+.sticky-footer{
+  background: none;
+  position: fixed;
+  left: 0;
+  margin-left: 1em;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+  .sticky-footer p{
+    color: black;
+    font-family: 'Libre Caslon Display';
+    text-transform: uppercase;
+  }
 
 .apt-section-content-wrap{
   display: flex;
@@ -49,6 +64,7 @@
   width: 500px;
 }
   .apt-section-content .apt-section-title{
+    color: white;
     font-size: 2.5em;
     margin-left: 0;
     text-transform: uppercase;
