@@ -25,6 +25,7 @@ app.set('view engine', 'ejs')
 app.get('/', home);
 app.get('/social', social);
 app.get('/samples', samples);
+app.get('/dev', construction);
 app.get('/facebook', facebook);
 app.get('/credit', credit);
 
@@ -42,9 +43,11 @@ function samples(req, res){
 function facebook(req, res){
   res.render('../views/facebook.ejs')
 }
-
 function credit(req, res){
   res.render('../views/credit.ejs')
+}
+function construction(req, res){
+  res.render('../views/construction.ejs')
 }
 
 // Read & Save Functions
