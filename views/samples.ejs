@@ -1,18 +1,9 @@
-<%- include('../views/head.ejs') %>
+<%- include('../views/components/html/html-head.ejs') %>
 <body>
-  <%-  include('../views/nav.ejs') %>
-    <%- include('../views/spaMenu.ejs') %>
-    <%- include('../views/spaMenu2.ejs') %>
-    <%- include('../views/productPage.ejs') %>
-    <%- include('../views/productPage2.ejs') %>
-    <section>
-  <div class="l-Section-content">
-    <!-- <h4>Podcast</h4>
-    <h4>Coming Soon!</h4>
-    <div class="audio-wrapper">
-      <audio controls src="" type="audio/mp3"></audio> 
-    </div>
-  </div> -->
-  </section>
+  <%-  include('../views/components/nav/nav.ejs') %>
+    <%- include('../views/responsive-card-layout.ejs') %>
+    <%- include('../views/responsive-card-layout-alt.ejs') %>
+    <%- include('../views/column-grid-layout.ejs') %>
+    <%- include('../views/column-grid-layout-alt.ejs') %>
 </body>
 </html>
