@@ -76,3 +76,26 @@ input[type="text"]:focus{
   .l-Section-content a:hover{
     color: #5ca8df;
   }
+      /* Section content default button styling */
+      .l-Section-content button{
+        border: 2px solid rgb(56, 181, 230);
+        border-radius: 2px;
+        background: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        margin-top: 12px;
+    }
+    /* section content input styling*/
+    .l-Section-content input{
+        height: 2em;
+        width: 50%;
+        border-bottom: 2px solid rgb(56, 181, 230);
+        background-color: transparent;
+        color: white;
+        outline: none;
+        font-size: .9em;
+        text-align: left;
+    }
