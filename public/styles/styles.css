@@ -19,8 +19,6 @@ body {
 }
   .main-body{
     background-color:rgba(255, 255, 255, 0.22);
-    background: url('../assets/icons/wriggle-pattern.png') repeat center center fixed;
-    background-size: 100px 100px;
     background-repeat: repeat;
 }
     .main-body::after{
@@ -39,7 +37,6 @@ body {
 .wrapper{
     background-color: rgb(250, 246, 246);
     box-shadow: 0 23px 23px 7px rgba(138, 130, 130, 0.288);
-    width: 66%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -263,6 +260,7 @@ label{
 body{
     overflow: auto;
 }
+
 /* Display Hide/Show */
 .desktop-display{
     display: block;
