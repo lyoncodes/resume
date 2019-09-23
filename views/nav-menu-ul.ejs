@@ -40,40 +40,45 @@
           <span>About Me</span></a></li>
           <div class="link-display" id ="hash3">
             <div class="link-row">
-              <li><a href="#" class="li-underline">
+              <li><a href="#" id="favorites-link" class="li-underline">
                 <span>Favorites </span></a></li>
-              <li><a href="#" class="li-underline">
-                <span>Fiction </span></a></li>
             </div>
           </div>      
       </ul>
     </nav>
   </div>
-  <div class="nav-menu-img-container">
-    <img src="../assets/images/apt-exterior.jpg">
+  <div class="nav-menu-img-container" id="box1">
+    <a href="/skyscraper">
+      <span class="image-label" id="label1">Skyscraper</span>
+      <img src="../assets/images/apt-exterior.jpg">
+    </a>
   </div>
-  <div class="nav-menu-img-container">
-    <img src="../assets/images/ritual-thumb.jpg">
+  <div class="nav-menu-img-container" id="box2">
+    <a href="/retail-spa">
+      <span class="image-label" id="label2">Spa</span>
+      <img src="../assets/images/ritual-thumb.jpg">
+    </a>
   </div>
-  <div class="nav-menu-img-container">
+  <div class="nav-menu-img-container" id="box3">
+    <a href="/product">
+      <span class="image-label" id="label3">Speakers</span>  
       <img src="../assets/images/speaker-thumb.jpg">
+    </a>
   </div>
-  <div class="nav-menu-img-container">
-    <img src="../assets/images/mono-thumb.jpg">
+  <div class="nav-menu-img-container" id="box4">
+    <a href="/product-s">
+      <span class="image-label" id="label4">Sneakers</span>
+      <img src="../assets/images/mono-thumb.jpg">
+    </a>
   </div>
-  <div class="nav-menu-img-container">
-    <img src="../assets/images/salt-thumb.jpg">
+  <div class="nav-menu-img-container" id="box5">
+    <a href="/retail-spa-r">
+      <span class="image-label" id="label5">Spa</span>
+      <img src="../assets/images/salt-thumb.jpg">
+    </a>
   </div>
-  <!-- <div class="nav-menu-ul-container">
-      <nav>
-        <ul>
-        </ul>
-      </nav>
-    </div>
-    <div class="nav-menu-ul-container">
-        <nav>
-          <ul>
-          </ul>
-        </nav>
-      </div> -->
 </section>
+
+<div class="display-on-click" id="favorites-display">
+    <%- include('../views/content-ul.ejs') %>
+</div>
