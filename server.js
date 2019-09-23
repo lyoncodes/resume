@@ -28,6 +28,7 @@ app.get('/retail-spa', fetchRetail);
 app.get('/retail-spa-r', fetchRetailSpa);
 app.get('/product', fetchSpeaker);
 app.get('/product-s', fetchSneaker);
+app.get('/development', fetchDevelopment);
 
 // app.get('/social', social);
 // app.get('/samples', samples);
@@ -38,7 +39,12 @@ app.get('/product-s', fetchSneaker);
 // Rendering Functions
 function home(req, res) {
  res.render('../views/index.ejs')
-} 
+}
+
+function fetchDevelopment(req, res){
+  res.render('../views/content-ul.ejs')
+}
+
 function fetchSample(req, res){
   res.render('../views/image-background-layout.ejs')
 }
