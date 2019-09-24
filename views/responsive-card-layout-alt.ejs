@@ -1,13 +1,19 @@
 <%- include('../views/components/html/html-head.ejs') %>
-<body>
+<body id="spa-body">
     <%- include('../views/components/nav/fixed-nav.ejs') %>
-  <h1 id="a-main-spa-title">SALT</h1>
-        <p class="a-lines"> 
-          at SALT, we believe everyone deserves the magic of a spa day. so we built a temple in the name of treat-yourself and designed a thoughtful collection of services suited for all. 
-        </p>
+  <div class="spa-head-container">
+    <h1 id="a-main-spa-title">SALT</h1>
+          <p class="a-lines"> 
+            at SALT, we believe everyone deserves the magic of a spa day. so we built a temple in the name of treat-yourself and designed a thoughtful collection of services suited for all. 
+          </p>
+  </div>
+    <!-- Image -->
     <div class="a-spa-image-wrap">
       
     </div>
+
+    <!-- Services -->
+    <h2 class="a-sp-subtitle">Service Gallore</h2>
     <div class="a-sp-container">
       <div class="sp-card">
         <!-- <img class="sp-img"src="/assets/icons/steam.png"></img> -->
@@ -36,7 +42,7 @@
             45 -or- 90 Minutes
           </div>
           <div class="a-sp-copy">
-            A seamless blend of techniques soothes the shoulders, neck, and back, with lavendar & rosemary infused oils promoting natural sensations.
+            A seamless blend of techniques soothes the shoulders, neck, and back, with lavender & rosemary infused oils promoting natural sensations.
           </div>
         </div>
       <div class="sp-actions">
@@ -87,4 +93,5 @@
       </div>
       </div>
   </div>
+  <script src="../js/jquery/spa-s.js"></script>
 </body>
