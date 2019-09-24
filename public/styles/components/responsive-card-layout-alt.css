@@ -1,0 +1,178 @@
+/* WORK SAMPLE 2 */
+.a-sp-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.a-spa-image-wrap{
+  background: url('../../assets/images/salt.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 1em 5px 2em white, inset -1em -155px 11em white;
+  height: 800px;
+  overflow: auto;
+}
+
+.a-sp-container h2 {
+  color: #ff6f61;
+  font-family: 'Muli';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.89px;
+  margin: 4px 0;
+}
+#a-main-spa-title {
+    color: #ff6f61;
+    font-family: 'Muli';
+    font-size: 8em;
+    text-shadow: none;
+    margin-top: 0em;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+  .a-sp-subtitle{
+    font-family: 'Muli';
+    text-align: center;
+  }
+
+.a-lines{
+    color: black;
+    margin-top: 4em;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.25em;
+    left: 50%;
+    margin-right: 25%;
+    transform: translate(-50%, -25%)
+}
+  
+  .sp-card:hover .sp-overlay{
+    cursor: pointer;
+    bottom: -30px;
+    right: -30px;
+    transition: all 200ms ease-out;
+  }
+  
+  .sp-info {
+    height: 35%;
+  }
+    .a-sp-title {
+      color: black;
+      font-family: 'Khula';
+      font-size: 1.25em;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.67px;
+    }
+    .a-sp-copy {
+      color: black;
+      font-family: 'Khula';
+      font-size: 1em;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.44px;
+      margin-top: 10px;
+    }
+
+  .a-sp-button {
+    cursor: default;
+    background: transparent;
+    border: none;
+    font-family: 'Khula';
+    font-size: 1.25em;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    margin-top: 7em;
+    color: #272626;
+    padding: 0;
+  }
+  .sp-overlay {
+    background-color: #ff929257 ;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -120px;
+    right: -120px;
+    transition: all 200ms ease-in;
+  }
+
+.sp-actions {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.a-sp-heart-container {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.a-sp-heart {
+  background-color: white;
+  display: inline-block;
+  height: 20px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+
+    .a-sp-heart:before,
+    .a-sp-heart:after {
+        content: "";
+        background-color: white;
+        border-radius: 50%;
+        height: 20px;
+        position: absolute;
+        width: 20px;
+    }
+
+    .a-sp-heart:before {
+      top: -12px;
+      left: 0;
+    }
+
+    .a-sp-heart:after {
+      left: 12px;
+      top: 0;
+    }
+
+.sp-img{
+  height: 40%;
+  object-fit: contain;
+}
+/*DESKTOP*/
+@media screen and (min-width : 1025px) {
+#a-main-spa-title {
+  font-size: 16em;
+}
+.a-lines{
+    color: black;
+    margin-top: 2em;
+    position: relative;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.75em;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -25%)
+}
+}

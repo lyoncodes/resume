@@ -1,14 +1,11 @@
-<%- include('../views/head.ejs') %>
-    <body>
+<%- include('../views/components/html/html-head.ejs') %>
+    <body class="main-body">
       <div class="wrapper">
-        <div class="mobile-display">
-          <%- include('../views/nav-home.ejs') %>
-        </div>
-        <%- include('../views/header.ejs') %>
-          <%- include('../views/resume.ejs') %>
-          <div class="desktop-display">
-            <%- include('../views/nav-home.ejs') %>
-          </div>
+       <!-- Title & Header -->
+        <%- include('../views/content-header.ejs') %>
+       <!-- Content -->
+        <%- include('../views/main-content.ejs') %>
       </div>
+      <%- include('../views/components/html/html-footer.ejs') %>
     </body>
 </html>

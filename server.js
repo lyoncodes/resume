@@ -23,29 +23,47 @@ app.set('view engine', 'ejs')
 
 // Routes
 app.get('/', home);
-app.get('/social', social);
-app.get('/samples', samples);
-app.get('/facebook', facebook);
-app.get('/credit', credit);
+app.get('/skyscraper', fetchSample);
+app.get('/retail-spa', fetchRetail);
+app.get('/retail-spa-r', fetchRetailSpa);
+app.get('/product', fetchSpeaker);
+app.get('/product-s', fetchSneaker);
+app.get('/development', fetchDevelopment);
+
+// app.get('/social', social);
+// app.get('/samples', samples);
+// app.get('/dev', construction);
+// app.get('/credit', credit);
 
 
 // Rendering Functions
 function home(req, res) {
  res.render('../views/index.ejs')
 }
-function social(req, res){
-  res.render('../views/socialMedia.ejs')
-}
-function samples(req, res){
-  res.render('../views/samples.ejs')
-}
-function facebook(req, res){
-  res.render('../views/facebook.ejs')
+
+function fetchDevelopment(req, res){
+  res.render('../views/content-ul.ejs')
 }
 
-function credit(req, res){
-  res.render('../views/credit.ejs')
+function fetchSample(req, res){
+  res.render('../views/image-background-layout.ejs')
 }
+function fetchRetail(req, res){
+  res.render('../views/responsive-card-layout.ejs')
+}
+function fetchRetailSpa(req, res){
+  res.render('../views/responsive-card-layout-alt.ejs')
+}
+
+function fetchSpeaker(req, res){
+  res.render('../views/column-grid-layout.ejs')
+}
+
+function fetchSneaker(req, res){
+  res.render('../views/column-grid-layout-alt.ejs')
+};
+
+
 
 // Read & Save Functions
 

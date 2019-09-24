@@ -1,20 +1,9 @@
-<%- include('../views/head.ejs') %>
+<%- include('../views/components/html/html-head.ejs') %>
 <body>
- <div class="wrapper">
-  <%-  include('../views/nav.ejs') %>
-
-  <section>
-   <div class="l-Section-content">
-    <h4>Coming in July!</h4>
-    <a href="/">Go Back Home</a>
-    
-    <h4>Podcast</h4>
-  <div class="audio-wrapper">
-      <audio controls src="" type="audio/mp3"></audio> 
-  </div>
-
-   </div>
-  </section>
- </div>
+  <%-  include('../views/components/nav/nav.ejs') %>
+    <%- include('../views/responsive-card-layout.ejs') %>
+    <%- include('../views/responsive-card-layout-alt.ejs') %>
+    <%- include('../views/column-grid-layout.ejs') %>
+    <%- include('../views/column-grid-layout-alt.ejs') %>
 </body>
 </html>

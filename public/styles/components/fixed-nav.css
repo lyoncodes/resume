@@ -1,0 +1,19 @@
+.navbar{
+  overflow: hidden;
+  background: none;
+  position: fixed;
+  top: 0;
+  width: 25%;
+  margin-left: 75%;
+  margin-top: 1em;
+}
+.navbar a{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  z-index: 5;
+  }
+
+  .navbar a img{
+    height: 3em;
+  }
