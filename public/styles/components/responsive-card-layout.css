@@ -12,6 +12,10 @@
   flex-wrap: wrap;
 }
 
+.spa-head-container{
+  margin-bottom: 1vh;
+}
+
 .spa-image-wrap{
   background: url('../../assets/images/ritual.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -94,6 +98,10 @@
       line-height: normal;
       letter-spacing: 0.67px;
       color: #969db8;
+    }
+    .sp-subtitle{
+      font-family: 'Cormorant SC';
+      text-align: center;
     }
     .sp-copy {
       color: #525252;
