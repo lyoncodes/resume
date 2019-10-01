@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 2em;
 }
 
 .a-spa-image-wrap{
@@ -29,6 +30,13 @@
   letter-spacing: 0.89px;
   margin: 4px 0;
 }
+
+.a-sp-container img{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 1em;
+}
+
 #a-main-spa-title {
     color: #ff6f61;
     font-family: 'Muli';
