@@ -1,11 +1,8 @@
 .navbar{
-  overflow: hidden;
-  background: none;
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
-  top: 0;
-  width: 25%;
-  margin-left: 75%;
-  margin-top: 1em;
+  width: 100%;
 }
 .navbar a{
   display: block;
