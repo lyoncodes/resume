@@ -1,54 +1,256 @@
 /* WORK SAMPLE 1 */
-.ritual-container{
-  background-color: black;
-  height: 100%;
-}
-
-.sp-container{
+.sp-body{
+  background-color: rgb(250, 250, 250);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 16px;
+  overflow: hidden;
 }
-
-.spa-head-container{
-  margin-bottom: 1vh;
+.sp-heading{
+  display: flex;
+  min-width: 15rem;
+  max-width: 30rem;
+  /* align-self: stretch; */
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-right: 5rem;
 }
+.sp-heading h1{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Cormorant SC', serif;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #000;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 600;
+  flex: 1 1 50%;
+  }
+  .sp-heading h2 {
+    font-family: 'Cormorant', sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 1.1rem 0;
+    font-size: 2.4rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1;
+    flex: 1 1 50%;
+  }
+  .sp-heading li{
+    list-style-type: none;
+  }
+  .sp-heading a{
+    cursor: pointer;
+  }
 
-.spa-image-wrap{
-  background: url('../../assets/images/ritual.jpg') no-repeat center center fixed;
+.sp-panel{
+  display: block;
+  width: calc(100vmin - 2rem);
+  height: calc(100vmin - 2rem);
+  max-width: 30rem;
+  max-height: 30rem;
+  background: url('../../assets/icons/ritual-panel.jpg') no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: inset 1em 5px 2em black, inset -1em -155px 11em black;
-  height: 800px;
-  overflow: auto;
+  box-shadow: inset -1em 23px 5em rgb(250, 250, 250), inset 7em 45px 5em rgb(250, 250, 250);
 }
 
-.sp-container h2 {
-  color: #3e3e3e;
-  font-family: 'Cormorant SC', sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.89px;
-  margin: 4px 0;
-  color: #3e3e3e;
+input[type='checkbox']{
+  display: none;
 }
-#main-spa-title {
-    color: #dfdfdf;
-    font-family: 'Cormorant SC';
-    font-size: 72px;
-    text-shadow: none;
-    margin-top: 0em;
-    margin-bottom: 0px;
+
+input[type='checkbox']:checked + .menu-content {
+  transform: translateY(-60px);
+}
+
+.card{
+  float: left;
+  width: 50%;
+  padding: 0 1.7rem;
+  box-shadow: inset -1em 23px 5em rgb(250, 250, 250), inset 7em 45px 5em rgb(250, 250, 250);
+}
+
+.card-wrapper{
+  background-color: #f1f1ec;
+  min-height: 540px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0,0,0, 0.3), 0 15px 12px rgba(0,0,0, 0.2);
+}
+
+.date{
+  top: 0;
+  left: 0;
+  background-color: #77d7b9;
+  color: white;
+  padding: 0.8em;
+}
+
+  /* .date span{
+    display: block;
     text-align: center;
+  } */
 
+.date-label{
+  /* position: absolute; */
+  display: block;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  transform: translate(-50%, 0);
 }
+
+.day{
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 2px 3px 2px rgb(black, 0.18);
+}
+.month{
+  text-transform: uppercase;
+}
+.month, .year{
+  font-size: 12px;
+}
+
+.data{
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(377px + 1em));
+  transition: transform 0.8s;
+}
+  .data-on-hover{
+    transform: translateY(100px);
+  }
+.content {
+  background-color: rgba(255, 255, 255, 0.61);
+  height: 500px;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+.author {
+  font-size: 1em;
+}
+.card-title{
+  margin-top: 10px;
+}
+  .card-title a{
+    color: black;
+  }
+.card-text{
+  height: 70px;
+  margin: 0;
+}
+
+.card1{
+  background: url('../../assets/images/ritual-thumb.jpg') 20% 1% / cover no-repeat;
+}
+
+  .card1 .date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #77d7b9;
+    color:white;
+    padding: 0.8em;
+  }
+  .card1 span{
+    display: block;
+    text-align: center;
+  }
+
+.menu-button{
+  position: absolute;
+  z-index: 999;
+  top: 16px;
+  right: 16px;
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+  .menu-button span{
+    width: 5px;
+    height: 5px;
+    background-color: lighten(black, 50%);
+    color: lighten(black, 50%);
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+.menu-content{
+  text-align: center;
+  padding-left: 0;
+  position: absolute;
+  top:-76px;
+  left: 0;
+  width: 101%;
+  z-index: -1;
+  transition: transform 0.3s;
+  transform: translateY(0);
+}
+  .menu-content li{
+    display: inline-block;
+    width: 33.333333%;
+    float: left;
+    background-color: #77d7b983;
+    height: 60px;
+    position: relative;
+  }
+  .menu-content a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  .menu-content span{
+    top: -10px;
+  }
+  
+.sp-menu-container ul{
+  padding-right: 15rem;
+}
+
+.sp-menu-container ul li{
+  -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  -moz-animation: reveal 2s ease-in 1 normal forwards;
+    -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+.sp-li-underline:hover{
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: #969db8;
+}
+.sp-li-underline:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* .spa-head-container{
+  box-shadow: inset -10em 70px 93em rgb(0,0,0), inset 3em -99px 10em rgb(0, 0, 0);
+  padding: 2em;
+} */
+
+/* .spa-image-wrap{
+  height: 700px;
+  overflow: auto;
+} */
 
 .lines{
     color: #ebebeb;
@@ -61,18 +263,23 @@
 }
 
 .sp-card {
-  cursor: default;
-  margin:  20px ;
-  padding: 14px;
-  position: relative;
-  width: 250px;
-  height: 350px;
+  display: none;
+  width: calc(100vmin - 2rem);
+  height: calc(100vmin - 2rem);
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 30rem;
+  max-height: 30rem;
   border-radius: 8px;
   box-shadow: 0 23px 23px 7px rgba(138, 130, 130, 0.04);
   background-color: #ffffff;
-  overflow: hidden;
+  overflow-y: scroll;
   transition: all 200ms ease-out;
 }
+/* remove scrollbar */
+  ::-webkit-scrollbar{
+    width: 0px;
+  }
   .sp-card:hover{
     transform: scale(1.05);
     transition: all 200ms ease-out;
@@ -99,7 +306,8 @@
       letter-spacing: 0.67px;
       color: #969db8;
     }
-    .sp-subtitle{
+    #sp-subtitle{
+      display: block;
       font-family: 'Cormorant SC';
       text-align: center;
     }
@@ -126,7 +334,6 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: 0.44px;
-    margin-top: 31.5px;
     color: #272626;
     padding: 0;
   }
@@ -168,7 +375,7 @@
     .sp-heart:before,
     .sp-heart:after {
         content: "";
-        background-color: white;
+        background-color: black;
         border-radius: 50%;
         height: 20px;
         position: absolute;
@@ -197,9 +404,7 @@
     margin-right: 50%;
     font-size: 2em;
   }
-  .sp-container{
-    margin-top: 4em;
-  }
+
   #main-spa-title{
     font-size: 7em;
   }

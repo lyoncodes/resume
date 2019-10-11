@@ -1,92 +1,93 @@
 <%- include('../views/components/html/html-head.ejs') %>
 <body>
-  <%- include('../views/components/nav/fixed-nav.ejs') %>
-  <div class="ritual-container">
-  
-    <h1 id="main-spa-title">RITUAL</h1>
-  <div class="spa-head-container">
-    <p class="lines" id="lines"> 
-      steeped in the traditions of greek and turkish baths, RITUAL spa skillfully curates the elements of water and heat for a wellness experience far beyond ordinary. candle-lit enclaves of marble and stone invite you to indulge in bespoke seasonal treatments designed to invigorate the spirit and restore youth.
-    </p>
-  </div>
-  
-    <div class="spa-image-wrap"></div>
-   
-    </div>
-    <h2 class="sp-subtitle">Choose Your Ritual</h2>
-      <div class="sp-container">
-        <div class="sp-card">
-          <img class="sp-img"src="/assets/icons/steam-icon.png"></img>
-          <div class="sp-info">
-            <h2>Steam</h2>
-            <div class="sp-title">
-              180 minutes
-            </div>
-            <div class="sp-copy">
-              Breathe like never before in RITUAL's Turkish Steam Rooms. Eucalyptus boughs release aromatic sensations in 115 degrees of moist heat.
-            </div>
-          </div>
-        <div class="sp-actions">
-          <button class="sp-button">SELECT</button>
-          <div class="sp-heart-container">
-            <div class="sp-title">$80</div>
-          </div>
-        </div>
-        </div>
-        <div class="sp-card">
-            <img class="sp-img"src="/assets/icons/massage-icon.png"></img>
-          <div class="sp-info">
-            <h2>Massage</h2>
-            <div class="sp-title">
-              60 Minutes
-            </div>
-            <div class="sp-copy">
-              Harmonize body & mind with warm, hydrating argan oil and invigorating seasonal scents. Treatments include full-body exfoliation.
-            </div>
-          </div>
-        <div class="sp-actions">
-          <button class="sp-button">SELECT</button>
-          <div class="sp-heart-container">
-            <div class="sp-title">$125</div>
-          </div>
-        </div>
-        </div>
-        <div class="sp-card">
-          <img class="sp-img"src="/assets/icons/spiral-icon.png"></img>
-          <div class="sp-info">
-            <h2>Float</h2>
-            <div class="sp-title">
-              90 Minutes
-            </div>
-            <div class="sp-copy">
-              Encounter the bliss of weightlessness in RITUAL's private float caves, where effortless suspension atop salt water awakens deep tranquility.
-            </div>
-          </div>
-        <div class="sp-actions">
-          <button class="sp-button">SELECT</button>
-          <div class="sp-heart-container">
-            <div class="sp-title">$110</div>
-          </div>
-        </div>
-        </div>
-        <div class="sp-card">
-          <img class="sp-img"src="/assets/icons/bath-icon-1.png"></img>
-          <div class="sp-info">
-            <h2>Bath</h2>
-            <div class="sp-title">
-              90 Minutes
-            </div>
-            <div class="sp-copy">
-              Limestone and marble baths set the atmosphere for 8 aquatic experiences, including thermal soaks, jet pools, and cold plunges.
-            </div>
-          </div>
-        <div class="sp-actions">
-          <button class="sp-button">SELECT</button>
-          <div class="sp-heart-container">
-            <div class="sp-title">$80</div>
-          </div>
-        </div>
-        </div>
+ <div class="sp-body">
+   <div class="sp-heading">
+     <h1>RITUAL</h1>
+     <h2>spa</h2>
+   </div>
+   <div class="sp-panel">
+     <!-- panel img  -->
+   </div>
+ </div>
+ <!-- <div class="sp-body">
+    <div class="sp-heading" id="sp-service">
+      <h1>Services</h1>
+      <div class="sp-menu-container">
+        <ul>
+          <li class="sp-li-underline"><h2><a class="sp-a" id="section1">Beauty</a></h2></li>
+          <li class="sp-li-underline"><h2><a class="sp-a" id="section2">Steam</a></h2></li>
+          <li class="sp-li-underline"><h2><a class="sp-a" id="section3">Bath</a></h2></li>
+          <li class="sp-li-underline"><h2><a class="sp-a" id="section4">Massage</a></h2></li>
+        </ul>
       </div>
+    </div>
+    <div class="sp-panel" id="panel1"></div>  
+    <div class="sp-card" id="card1">
+      <h2>Facials</h2>
+        <div class="sp-title">45 -or- 90 Minutes</div>
+            <div class="sp-copy">
+              A seamless blend of techniques soothes the shoulders, neck, and back, with lavender & rosemary infused oils promoting natural sensations.
+            </div>
+        <button class="sp-button">$70/90</button>
+      
+      <h2>Scrubs</h2>
+        <div class="sp-title">45 -or- 90 Minutes</div>
+            <div class="sp-copy">
+              A seamless blend of techniques soothes the shoulders, neck, and back, with lavender & rosemary infused oils promoting natural sensations.
+        </div>
+        <button class="sp-button">$70/90</button>
+
+      <h2>Wraps</h2>
+        <div class="sp-title">45 -or- 90 Minutes</div>
+            <div class="sp-copy">
+              A seamless blend of techniques soothes the shoulders, neck, and back, with lavender & rosemary infused oils promoting natural sensations.
+        </div>
+        <button class="sp-button">$70/90</button>
+
+    </div>
+
+    <div class="sp-card" id="card2">b</div>
+    <div class="sp-card" id="card3">c</div>
+    <div class="sp-card" id="card4">d</div>
+  </div> -->
+ <div class="card">
+   <div class="card-wrapper card1">
+    <div class="date">
+      <span class="date-label month">
+        <%= formattedDate[0] %>
+      </span>
+      <span class="date-label day">
+        <%= formattedDate[1] %>
+      </span>
+      <span class="date-label year">
+        <%= formattedDate[2] %>
+      </span>
+    </div>
+    <div class="data">
+      <div class="content">
+        <span class="author">Jane Doe</span>
+        <h1 class="card-title"><a href="#">
+          Lorem Ipsum Title
+        </a></h1>
+        <p class="card-text">
+          Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title
+        </p>
+        <label for="show-menu" class="menu-button"><span></span></label>
+      </div>
+      <input type="checkbox" id="show-menu"/>
+      <ul class="menu-content">
+        <li>
+          <a href="#" class="fa fa-bookmark-o"></a>
+        </li>
+        <li>
+            <a href="#" class="fa fa-heart-o"></a>
+        </li>
+        <li>
+            <a href="#" class="fa fa-comment-o"></a>
+        </li>
+      </ul>
+    </div>
+   </div>
+ </div>
   <script src="/js/jquery/spa.js"></script>
 </body>

@@ -1,11 +1,9 @@
 //spa page scroll function
 $(document).ready(() => {
-$(".spa-head-container").on("click", (e) => {
-  console.log('clicked');
-  if (".sp-container" !== ""){
-   e.preventDefault();
-   let hash = ".sp-container";
-   $("html, body").animate({
-     scrollTop: $(hash).offset().top} , 800)
-  }
-})});
+  $('.card1').mouseover(function() {
+      $('.data').addClass('data-on-hover');
+  }).mouseout(function() {
+    $('.data').removeClass('data-on-hover');
+  });
+});
+
