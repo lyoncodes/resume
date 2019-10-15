@@ -46,7 +46,8 @@ function home(req, res) {
 }
 
 function fetchDevelopment(req, res){
-  res.render('../views/responsive-card-layout.ejs')
+  let formattedDate = date();
+  res.render('../views/responsive-card-layout.ejs', {formattedDate})
 }
 
 function fetchSample(req, res){

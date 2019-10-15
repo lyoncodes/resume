@@ -50,8 +50,9 @@
     <div class="sp-card" id="card3">c</div>
     <div class="sp-card" id="card4">d</div>
   </div> -->
- <div class="card">
-   <div class="card-wrapper card1">
+<div class="card-body">
+  <div class="card">
+   <div class="card-wrapper card1" id="card1">
     <div class="date">
       <span class="date-label month">
         <%= formattedDate[0] %>
@@ -63,31 +64,199 @@
         <%= formattedDate[2] %>
       </span>
     </div>
-    <div class="data">
+    <div class="data" id="data-a">
       <div class="content">
-        <span class="author">Jane Doe</span>
-        <h1 class="card-title"><a href="#">
-          Lorem Ipsum Title
-        </a></h1>
+        <span class="author">Services</span>
+        <h1 class="card-title">
+          Beauty</h1>
         <p class="card-text">
-          Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title
+          Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title One More
         </p>
-        <label for="show-menu" class="menu-button"><span></span></label>
+        
+        <div class="content-select">
+          <button>ADD</button>
+          <span class="content-select-subtitle">Essential Steam
+          </span>
+          <span class="content-select-subtitle-d">4 -to- 8 hours
+          </span>
+          <button>ADD</button>
+          <span class="content-select-subtitle">Lorem Ipsum
+          </span>
+          <span class="content-select-subtitle-d">4 -to- 8 hours
+          </span>
+          <button>ADD</button>
+          <span class="content-select-subtitle">Lorem Ipsum
+          </span>
+          <span class="content-select-subtitle-d">4 -to- 8 hours
+          </span>
+          <button>ADD</button>
+          <span class="content-select-subtitle">Lorem Ipsum
+          </span>
+          <span class="content-select-subtitle-d">4 -to- 8 hours
+          </span>
+        </div>
+        
       </div>
+      <label for="show-menu" class="menu-button"><img src="../assets/icons/action-overflow-icon.png"></label>
       <input type="checkbox" id="show-menu"/>
       <ul class="menu-content">
         <li>
-          <a href="#" class="fa fa-bookmark-o"></a>
+          <a href="#" class="fa fa-bookmark-o">
+            <img src="../assets/icons/calendar-icon.png">
+          </a>
         </li>
         <li>
-            <a href="#" class="fa fa-heart-o"></a>
+          <a href="#" class="fa fa-heart-o">
+            <img src="../assets/icons/cart-icon.png">
+          </a>
         </li>
         <li>
-            <a href="#" class="fa fa-comment-o"></a>
+          <a href="#" class="fa fa-comment-o">
+            <img src="../assets/icons/photo-icon.png">
+          </a>
         </li>
       </ul>
     </div>
-   </div>
+   </div>  
  </div>
+ <div class="card">
+    <div class="card-wrapper card1" id="card2">
+     <div class="date">
+       <span class="date-label month">
+         <%= formattedDate[0] %>
+       </span>
+       <span class="date-label day">
+         <%= formattedDate[1] %>
+       </span>
+       <span class="date-label year">
+         <%= formattedDate[2] %>
+       </span>
+     </div>
+     <div class="data" id="data-b">
+       <div class="content">
+         <span class="author">Services</span>
+         <h1 class="card-title">
+           Steam & Bath</h1>
+         <p class="card-text">
+            Breath like never before in RITUAL’s Turkish baths, where the elements of water and heat are skillfully blended to invigorate the senses and restore clarity.
+          </p>
+         
+         <div class="content-select">
+           <button>ADD</button>
+           <span class="content-select-subtitle">Essential Steam
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+           <button>ADD</button>
+           <span class="content-select-subtitle">Lorem Ipsum
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+           <button>ADD</button>
+           <span class="content-select-subtitle">Lorem Ipsum
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+           <button>ADD</button>
+           <span class="content-select-subtitle">Lorem Ipsum
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+         </div>
+         
+       </div>
+       <label for="show-menu" class="menu-button"><img src="../assets/icons/action-overflow-icon.png"></label>
+       <input type="checkbox" id="show-menu"/>
+       <ul class="menu-content">
+         <li>
+           <a href="#" class="fa fa-bookmark-o">
+             <img src="../assets/icons/calendar-icon.png">
+           </a>
+         </li>
+         <li>
+           <a href="#" class="fa fa-heart-o">
+             <img src="../assets/icons/cart-icon.png">
+           </a>
+         </li>
+         <li>
+           <a href="#" class="fa fa-comment-o">
+             <img src="../assets/icons/photo-icon.png">
+           </a>
+         </li>
+       </ul>
+     </div>
+    </div>  
+  </div>
+   <div class="card">
+    <div class="card-wrapper card1" id="card3">
+     <div class="date">
+       <span class="date-label month">
+         <%= formattedDate[0] %>
+       </span>
+       <span class="date-label day">
+         <%= formattedDate[1] %>
+       </span>
+       <span class="date-label year">
+         <%= formattedDate[2] %>
+       </span>
+     </div>
+     <div class="data" id="data-c">
+       <div class="content">
+         <span class="author">Services</span>
+         <h1 class="card-title">
+           Massage</h1>
+         <p class="card-text">
+           Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title Lorem Ipsum Title One More
+         </p>
+         
+         <div class="content-select">
+           <button>ADD</button>
+           <span class="content-select-subtitle">Essential Steam
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+           <button>ADD</button>
+           <span class="content-select-subtitle">Lorem Ipsum
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+           <button>ADD</button>
+           <span class="content-select-subtitle">Lorem Ipsum
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+           <button>ADD</button>
+           <span class="content-select-subtitle">Lorem Ipsum
+           </span>
+           <span class="content-select-subtitle-d">4 -to- 8 hours
+           </span>
+         </div>
+         
+       </div>
+       <label for="show-menu" class="menu-button"><img src="../assets/icons/action-overflow-icon.png"></label>
+       <input type="checkbox" id="show-menu"/>
+       <ul class="menu-content">
+         <li>
+           <a href="#" class="fa fa-bookmark-o">
+             <img src="../assets/icons/calendar-icon.png">
+           </a>
+         </li>
+         <li>
+           <a href="#" class="fa fa-heart-o">
+             <img src="../assets/icons/cart-icon.png">
+           </a>
+         </li>
+         <li>
+           <a href="#" class="fa fa-comment-o">
+             <img src="../assets/icons/photo-icon.png">
+           </a>
+         </li>
+       </ul>
+     </div>
+    </div>  
+  </div>
+
+</div>
+ 
   <script src="/js/jquery/spa.js"></script>
 </body>

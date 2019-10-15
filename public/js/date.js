@@ -1,5 +1,6 @@
 function dateHandler(){
   let date = new Date();
+  let month = date.toDateString().split(' ');
   let cal = [];
   cal[0] = 'January';
   cal[1] = 'February';
@@ -14,7 +15,7 @@ function dateHandler(){
   cal[10] = 'November';
   cal[11] = 'December';
   let formattedMonth = cal[date.getMonth()];
-  let formattedDay = date.getDay();
+  let formattedDay = month[2];
   let formattedYear = date.getFullYear();
   return [formattedMonth, formattedDay, formattedYear];
 }
