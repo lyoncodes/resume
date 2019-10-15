@@ -6,6 +6,10 @@ require('dotenv').config()
 const express = require('express')
 const pg = require('pg')
 
+// import files
+
+const date = require('./public/js/date.js');
+
 // app 
 const app = express() 
 
@@ -42,14 +46,16 @@ function home(req, res) {
 }
 
 function fetchDevelopment(req, res){
-  res.render('../views/content-ul.ejs')
+  let formattedDate = date();
+  res.render('../views/responsive-card-layout.ejs', {formattedDate})
 }
 
 function fetchSample(req, res){
   res.render('../views/image-background-layout.ejs')
 }
 function fetchRetail(req, res){
-  res.render('../views/responsive-card-layout.ejs')
+  let formattedDate = date();
+  res.render('../views/responsive-card-layout.ejs', {formattedDate})
 }
 function fetchRetailSpa(req, res){
   res.render('../views/responsive-card-layout-alt.ejs')
@@ -62,7 +68,6 @@ function fetchSpeaker(req, res){
 function fetchSneaker(req, res){
   res.render('../views/column-grid-layout-alt.ejs')
 };
-
 
 
 // Read & Save Functions
